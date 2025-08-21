@@ -1,0 +1,67 @@
+2025-08-16 10:44:58.246 [warning] Dir "/home/shaiksahil0911/.pixi/envs" is not watchable (directory does not exist)
+2025-08-16 10:44:58.246 [info] Running installed packages checker:  {
+  id: '/home/shaiksahil0911/venv/bin/python',
+  sysPrefix: '/home/shaiksahil0911/venv',
+  envType: 'Venv',
+  envName: 'venv',
+  envPath: '/home/shaiksahil0911/venv',
+  path: '/home/shaiksahil0911/venv/bin/python',
+  architecture: 3,
+  sysVersion: '3.12.3 (main, Jun 18 2025, 17:59:45) [GCC 13.3.0]',
+  version: {
+    raw: '3.12.3',
+    major: 3,
+    minor: 12,
+    patch: 3,
+    build: [],
+    prerelease: [ 'final', '0' ]
+  },
+  displayName: "Python 3.12.3 ('venv')",
+  detailedDisplayName: "Python 3.12.3 ('venv': venv)",
+  type: 'Virtual'
+} /google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/installed_check.py /home/shaiksahil0911/pathpilot/requirements.txt
+2025-08-16 10:44:58.246 [info] > ./venv/bin/python /google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/installed_check.py ./pathpilot/requirements.txt
+2025-08-16 10:44:58.246 [info] Python interpreter path: ./venv/bin/python
+2025-08-16 10:44:59.000 [info] > pyenv which python
+2025-08-16 10:44:59.000 [info] cwd: .
+2025-08-16 10:45:04.277 [info] Starting Jedi language server for shaiksahil0911.
+2025-08-16 10:45:05.846 [info] Send text to terminal: source /home/shaiksahil0911/venv/bin/activate
+2025-08-16 10:46:32.341 [info] Discover tests for workspace name: shaiksahil0911 - uri: /home/shaiksahil0911/venv/lib/python3.12/site-packages/numpy/f2py/setup.cfg
+2025-08-16 10:48:57.189 [info] Running installed packages checker:  {
+  id: '/home/shaiksahil0911/venv/bin/python',
+  sysPrefix: '/home/shaiksahil0911/venv',
+  envType: 'Venv',
+  envName: 'venv',
+  envPath: '/home/shaiksahil0911/venv',
+  path: '/home/shaiksahil0911/venv/bin/python',
+  architecture: 3,
+  sysVersion: '3.12.3 (main, Jun 18 2025, 17:59:45) [GCC 13.3.0]',
+  version: {
+    raw: '3.12.3',
+    major: 3,
+    minor: 12,
+    patch: 3,
+    build: [],
+    prerelease: [ 'final', '0' ]
+  },
+  displayName: "Python 3.12.3 ('venv')",
+  detailedDisplayName: "Python 3.12.3 ('venv': venv)",
+  type: 'Virtual'
+} /google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/installed_check.py /home/shaiksahil0911/pathpilot/requirements.txt
+2025-08-16 10:48:57.189 [info] > ./venv/bin/python /google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/installed_check.py ./pathpilot/requirements.txt
+2025-08-16 10:48:57.191 [error] Error while getting installed packages check result:
+ Error: spawn /home/shaiksahil0911/venv/bin/python ENOENT
+    at Process.ChildProcess._handle.onexit (node:internal/child_process:285:19)
+    at onErrorNT (node:internal/child_process:483:16)
+    at processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'spawn /home/shaiksahil0911/venv/bin/python',
+  path: '/home/shaiksahil0911/venv/bin/python',
+  spawnargs: [
+    '/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/installed_check.py',
+    '/home/shaiksahil0911/pathpilot/requirements.txt'
+  ]
+}
+2025-08-16 10:56:21.485 [info] Discover tests for workspace name: shaiksahil0911 - uri: /home/shaiksahil0911/pathpilot/pathpilot/settings.py
+2025-08-16 10:56:23.667 [info] Discover tests for workspace name: shaiksahil0911 - uri: /home/shaiksahil0911/pathpilot/pathpilot/settings.py

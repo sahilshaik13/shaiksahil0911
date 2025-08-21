@@ -1,0 +1,59 @@
+2025-06-03 05:19:54.906 [warning] Dir "/home/shaiksahil0911/.pixi/envs" is not watchable (directory does not exist)
+2025-06-03 05:19:55.007 [info] Python interpreter path: ./venv/bin/python
+2025-06-03 05:19:55.919 [info] > pyenv which python
+2025-06-03 05:19:55.919 [info] cwd: .
+2025-06-03 05:20:05.914 [info] Starting Jedi language server for shaiksahil0911.
+2025-06-03 05:21:15.505 [info] Running installed packages checker:  {
+  id: '/home/shaiksahil0911/venv/bin/python',
+  sysPrefix: '/home/shaiksahil0911/venv',
+  envType: 'Venv',
+  envName: 'venv',
+  envPath: '/home/shaiksahil0911/venv',
+  path: '/home/shaiksahil0911/venv/bin/python',
+  architecture: 3,
+  sysVersion: '3.12.3 (main, Feb  4 2025, 14:48:35) [GCC 13.3.0]',
+  version: {
+    raw: '3.12.3',
+    major: 3,
+    minor: 12,
+    patch: 3,
+    build: [],
+    prerelease: [ 'final', '0' ]
+  },
+  displayName: "Python 3.12.3 ('venv')",
+  detailedDisplayName: "Python 3.12.3 ('venv': venv)",
+  type: 'Virtual'
+} /google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/installed_check.py /home/shaiksahil0911/resume_ai/requirements.txt
+2025-06-03 05:21:15.505 [info] > ./venv/bin/python /google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/installed_check.py ./resume_ai/requirements.txt
+2025-06-03 05:21:37.919 [info] Discover tests for workspace name: shaiksahil0911 - uri: /home/shaiksahil0911/resume_ai/parser/views.py
+2025-06-03 05:28:43.591 [info] Discover tests for workspace name: shaiksahil0911 - uri: /home/shaiksahil0911/resume_ai/resume_ai/urls.py
+2025-06-03 05:28:45.312 [info] Discover tests for workspace name: shaiksahil0911 - uri: /home/shaiksahil0911/resume_ai/resume_ai/urls.py
+2025-06-03 05:28:50.008 [info] Discover tests for workspace name: shaiksahil0911 - uri: /home/shaiksahil0911/resume_ai/resume_ai/urls.py
+2025-06-03 05:28:52.857 [info] Discover tests for workspace name: shaiksahil0911 - uri: /home/shaiksahil0911/resume_ai/resume_ai/urls.py
+2025-06-03 05:28:54.594 [info] Discover tests for workspace name: shaiksahil0911 - uri: /home/shaiksahil0911/resume_ai/resume_ai/urls.py
+2025-06-03 05:29:00.141 [info] Discover tests for workspace name: shaiksahil0911 - uri: /home/shaiksahil0911/resume_ai/resume_ai/urls.py
+2025-06-03 05:29:01.301 [info] Discover tests for workspace name: shaiksahil0911 - uri: /home/shaiksahil0911/resume_ai/resume_ai/urls.py
+2025-06-03 05:29:10.894 [info] Discover tests for workspace name: shaiksahil0911 - uri: /home/shaiksahil0911/resume_ai/resume_ai/urls.py
+2025-06-03 05:29:12.194 [info] Discover tests for workspace name: shaiksahil0911 - uri: /home/shaiksahil0911/resume_ai/resume_ai/urls.py
+2025-06-03 05:29:14.425 [info] Discover tests for workspace name: shaiksahil0911 - uri: /home/shaiksahil0911/resume_ai/resume_ai/urls.py
+2025-06-03 05:29:16.821 [info] Discover tests for workspace name: shaiksahil0911 - uri: /home/shaiksahil0911/resume_ai/resume_ai/urls.py
+2025-06-03 05:29:18.002 [info] Discover tests for workspace name: shaiksahil0911 - uri: /home/shaiksahil0911/resume_ai/resume_ai/urls.py
+2025-06-03 05:29:21.297 [info] Discover tests for workspace name: shaiksahil0911 - uri: /home/shaiksahil0911/resume_ai/resume_ai/urls.py
+2025-06-03 05:29:21.668 [info] Discover tests for workspace name: shaiksahil0911 - uri: /home/shaiksahil0911/resume_ai/resume_ai/urls.py
+2025-06-03 05:30:36.075 [info] Discover tests for workspace name: shaiksahil0911 - uri: /home/shaiksahil0911/resume_ai/resume_ai/urls.py
+2025-06-03 05:30:38.568 [info] Discover tests for workspace name: shaiksahil0911 - uri: /home/shaiksahil0911/resume_ai/resume_ai/urls.py
+2025-06-03 05:30:47.727 [info] Discover tests for workspace name: shaiksahil0911 - uri: /home/shaiksahil0911/resume_ai/resume_ai/urls.py
+2025-06-03 05:30:51.987 [info] Discover tests for workspace name: shaiksahil0911 - uri: /home/shaiksahil0911/resume_ai/parser/urls.py
+2025-06-03 05:31:02.226 [info] Discover tests for workspace name: shaiksahil0911 - uri: /home/shaiksahil0911/resume_ai/parser/urls.py
+2025-06-03 05:31:24.665 [info] Discover tests for workspace name: shaiksahil0911 - uri: /home/shaiksahil0911/resume_ai/parser/urls.py
+2025-06-03 05:31:43.810 [info] Discover tests for workspace name: shaiksahil0911 - uri: /home/shaiksahil0911/resume_ai/parser/urls.py
+2025-06-03 05:31:44.559 [info] Discover tests for workspace name: shaiksahil0911 - uri: /home/shaiksahil0911/resume_ai/parser/urls.py
+2025-06-03 05:33:57.729 [info] Discover tests for workspace name: shaiksahil0911 - uri: /home/shaiksahil0911/resume_ai/parser/views.py
+2025-06-03 05:34:52.281 [info] Discover tests for workspace name: shaiksahil0911 - uri: /home/shaiksahil0911/resume_ai/parser/views.py
+2025-06-03 05:36:24.802 [info] Discover tests for workspace name: shaiksahil0911 - uri: /home/shaiksahil0911/resume_ai/parser/views.py
+2025-06-03 05:36:37.122 [info] Discover tests for workspace name: shaiksahil0911 - uri: /home/shaiksahil0911/resume_ai/resume_ai/urls.py
+2025-06-03 05:36:39.552 [info] Discover tests for workspace name: shaiksahil0911 - uri: /home/shaiksahil0911/resume_ai/resume_ai/urls.py
+2025-06-03 05:36:44.782 [info] Discover tests for workspace name: shaiksahil0911 - uri: /home/shaiksahil0911/resume_ai/parser/urls.py
+2025-06-03 05:49:12.558 [info] Discover tests for workspace name: shaiksahil0911 - uri: /home/shaiksahil0911/resume_ai/parser/views.py
+2025-06-03 05:52:15.396 [info] Discover tests for workspace name: shaiksahil0911 - uri: /home/shaiksahil0911/resume_ai/parser/views.py
+2025-06-03 05:58:31.463 [info] Discover tests for workspace name: shaiksahil0911 - uri: /home/shaiksahil0911/resume_ai/parser/views.py

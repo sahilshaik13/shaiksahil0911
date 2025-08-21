@@ -1,0 +1,758 @@
+2025-08-16 10:50:01.077 [info] ERROR:pygls.protocol.json_rpc:Failed to handle request 1 textDocument/codeAction CodeActionParams(text_document=TextDocumentIdentifier(uri='file:///home/shaiksahil0911/pathpilot/pathpilot/wsgi.py'), range=0:0-0:0, context=CodeActionContext(diagnostics=[], only=None, trigger_kind=<CodeActionTriggerKind.Automatic: 2>), work_done_token=None, partial_result_token=None)
+Traceback (most recent call last):
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/pygls/protocol/json_rpc.py", line 266, in _handle_request
+    self._execute_request(msg_id, handler, params)
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/pygls/protocol/json_rpc.py", line 188, in _execute_request
+    self._send_response(msg_id, handler(params))
+                                ^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi_language_server/server.py", line 568, in code_action
+    jedi_script = jedi_utils.script(server.project, document)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi_language_server/jedi_utils.py", line 125, in script
+    return Script(code=document.source, path=document.path, project=project)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi/api/__init__.py", line 119, in __init__
+    self._inference_state = InferenceState(
+                            ^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi/inference/__init__.py", line 87, in __init__
+    environment = project.get_environment()
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi/api/project.py", line 245, in get_environment
+    self._environment = create_environment(self._environment_path, safe=False)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi/api/environment.py", line 367, in create_environment
+    return Environment(_get_executable_path(path, safe=safe), env_vars=env_vars)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi/api/environment.py", line 380, in _get_executable_path
+    raise InvalidPythonEnvironment("%s seems to be missing." % python)
+jedi.api.environment.InvalidPythonEnvironment: /home/shaiksahil0911/venv/bin/python/bin/python seems to be missing.
+
+2025-08-16 10:50:01.081 [info] [Error - 10:50:01 AM] Request textDocument/codeAction failed.
+2025-08-16 10:50:01.081 [info]   Message: jedi.api.environment.InvalidPythonEnvironment: /home/shaiksahil0911/venv/bin/python/bin/python seems to be missing.
+  Code: -32603 
+[object Object]
+2025-08-16 10:50:01.103 [info] ERROR:pygls.protocol.json_rpc:Failed to handle request 2 textDocument/documentSymbol DocumentSymbolParams(text_document=TextDocumentIdentifier(uri='file:///home/shaiksahil0911/pathpilot/pathpilot/wsgi.py'), work_done_token=None, partial_result_token=None)
+Traceback (most recent call last):
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/pygls/protocol/json_rpc.py", line 266, in _handle_request
+    self._execute_request(msg_id, handler, params)
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/pygls/protocol/json_rpc.py", line 188, in _execute_request
+    self._send_response(msg_id, handler(params))
+                                ^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi_language_server/server.py", line 454, in document_symbol
+    jedi_script = jedi_utils.script(server.project, document)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi_language_server/jedi_utils.py", line 125, in script
+    return Script(code=document.source, path=document.path, project=project)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi/api/__init__.py", line 119, in __init__
+    self._inference_state = InferenceState(
+                            ^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi/inference/__init__.py", line 87, in __init__
+    environment = project.get_environment()
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi/api/project.py", line 245, in get_environment
+    self._environment = create_environment(self._environment_path, safe=False)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi/api/environment.py", line 367, in create_environment
+    return Environment(_get_executable_path(path, safe=safe), env_vars=env_vars)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi/api/environment.py", line 380, in _get_executable_path
+    raise InvalidPythonEnvironment("%s seems to be missing." % python)
+jedi.api.environment.InvalidPythonEnvironment: /home/shaiksahil0911/venv/bin/python/bin/python seems to be missing.
+
+2025-08-16 10:50:01.104 [info] [Error - 10:50:01 AM] Request textDocument/documentSymbol failed.
+2025-08-16 10:50:01.104 [info]   Message: jedi.api.environment.InvalidPythonEnvironment: /home/shaiksahil0911/venv/bin/python/bin/python seems to be missing.
+  Code: -32603 
+[object Object]
+2025-08-16 10:50:01.337 [info] ERROR:pygls.protocol.json_rpc:Failed to handle request 3 textDocument/documentSymbol DocumentSymbolParams(text_document=TextDocumentIdentifier(uri='file:///home/shaiksahil0911/pathpilot/pathpilot/wsgi.py'), work_done_token=None, partial_result_token=None)
+Traceback (most recent call last):
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/pygls/protocol/json_rpc.py", line 266, in _handle_request
+    self._execute_request(msg_id, handler, params)
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/pygls/protocol/json_rpc.py", line 188, in _execute_request
+    self._send_response(msg_id, handler(params))
+                                ^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi_language_server/server.py", line 454, in document_symbol
+    jedi_script = jedi_utils.script(server.project, document)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi_language_server/jedi_utils.py", line 125, in script
+    return Script(code=document.source, path=document.path, project=project)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi/api/__init__.py", line 119, in __init__
+    self._inference_state = InferenceState(
+                            ^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi/inference/__init__.py", line 87, in __init__
+    environment = project.get_environment()
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi/api/project.py", line 245, in get_environment
+    self._environment = create_environment(self._environment_path, safe=False)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi/api/environment.py", line 367, in create_environment
+    return Environment(_get_executable_path(path, safe=safe), env_vars=env_vars)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi/api/environment.py", line 380, in _get_executable_path
+    raise InvalidPythonEnvironment("%s seems to be missing." % python)
+jedi.api.environment.InvalidPythonEnvironment: /home/shaiksahil0911/venv/bin/python/bin/python seems to be missing.
+
+2025-08-16 10:50:01.338 [info] [Error - 10:50:01 AM] Request textDocument/documentSymbol failed.
+2025-08-16 10:50:01.338 [info]   Message: jedi.api.environment.InvalidPythonEnvironment: /home/shaiksahil0911/venv/bin/python/bin/python seems to be missing.
+  Code: -32603 
+[object Object]
+2025-08-16 10:56:13.092 [info] ERROR:pygls.protocol.json_rpc:Failed to handle request 4 textDocument/codeAction CodeActionParams(text_document=TextDocumentIdentifier(uri='file:///home/shaiksahil0911/pathpilot/pathpilot/settings.py'), range=0:0-0:0, context=CodeActionContext(diagnostics=[], only=None, trigger_kind=<CodeActionTriggerKind.Automatic: 2>), work_done_token=None, partial_result_token=None)
+Traceback (most recent call last):
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/pygls/protocol/json_rpc.py", line 266, in _handle_request
+    self._execute_request(msg_id, handler, params)
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/pygls/protocol/json_rpc.py", line 188, in _execute_request
+    self._send_response(msg_id, handler(params))
+                                ^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi_language_server/server.py", line 568, in code_action
+    jedi_script = jedi_utils.script(server.project, document)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi_language_server/jedi_utils.py", line 125, in script
+    return Script(code=document.source, path=document.path, project=project)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi/api/__init__.py", line 119, in __init__
+    self._inference_state = InferenceState(
+                            ^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi/inference/__init__.py", line 87, in __init__
+    environment = project.get_environment()
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi/api/project.py", line 245, in get_environment
+    self._environment = create_environment(self._environment_path, safe=False)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi/api/environment.py", line 367, in create_environment
+    return Environment(_get_executable_path(path, safe=safe), env_vars=env_vars)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi/api/environment.py", line 380, in _get_executable_path
+    raise InvalidPythonEnvironment("%s seems to be missing." % python)
+jedi.api.environment.InvalidPythonEnvironment: /home/shaiksahil0911/venv/bin/python/bin/python seems to be missing.
+ERROR:pygls.protocol.json_rpc:Failed to handle request 5 textDocument/documentSymbol DocumentSymbolParams(text_document=TextDocumentIdentifier(uri='file:///home/shaiksahil0911/pathpilot/pathpilot/settings.py'), work_done_token=None, partial_result_token=None)
+Traceback (most recent call last):
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/pygls/protocol/json_rpc.py", line 266, in _handle_request
+    self._execute_request(msg_id, handler, params)
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/pygls/protocol/json_rpc.py", line 188, in _execute_request
+    self._send_response(msg_id, handler(params))
+                                ^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi_language_server/server.py", line 454, in document_symbol
+    jedi_script = jedi_utils.script(server.project, document)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi_language_server/jedi_utils.py", line 125, in script
+    return Script(code=document.source, path=document.path, project=project)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi/api/__init__.py", line 119, in __init__
+    self._inference_state = InferenceState(
+                            ^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi/inference/__init__.py", line 87, in __init__
+    environment = project.get_environment()
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi/api/project.py", line 245, in get_environment
+    self._environment = create_environment(self._environment_path, safe=False)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi/api/environment.py", line 367, in create_environment
+    return Environment(_get_executable_path(path, safe=safe), env_vars=env_vars)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi/api/environment.py", line 380, in _get_executable_path
+    raise InvalidPythonEnvironment("%s seems to be missing." % python)
+jedi.api.environment.InvalidPythonEnvironment: /home/shaiksahil0911/venv/bin/python/bin/python seems to be missing.
+
+2025-08-16 10:56:13.096 [info] [Error - 10:56:13 AM] Request textDocument/codeAction failed.
+2025-08-16 10:56:13.096 [info]   Message: jedi.api.environment.InvalidPythonEnvironment: /home/shaiksahil0911/venv/bin/python/bin/python seems to be missing.
+  Code: -32603 
+[object Object]
+2025-08-16 10:56:13.098 [info] [Error - 10:56:13 AM] Request textDocument/documentSymbol failed.
+2025-08-16 10:56:13.098 [info]   Message: jedi.api.environment.InvalidPythonEnvironment: /home/shaiksahil0911/venv/bin/python/bin/python seems to be missing.
+  Code: -32603 
+[object Object]
+2025-08-16 10:56:13.373 [info] ERROR:pygls.protocol.json_rpc:Failed to handle request 6 textDocument/documentSymbol DocumentSymbolParams(text_document=TextDocumentIdentifier(uri='file:///home/shaiksahil0911/pathpilot/pathpilot/settings.py'), work_done_token=None, partial_result_token=None)
+Traceback (most recent call last):
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/pygls/protocol/json_rpc.py", line 266, in _handle_request
+    self._execute_request(msg_id, handler, params)
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/pygls/protocol/json_rpc.py", line 188, in _execute_request
+    self._send_response(msg_id, handler(params))
+                                ^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi_language_server/server.py", line 454, in document_symbol
+    jedi_script = jedi_utils.script(server.project, document)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi_language_server/jedi_utils.py", line 125, in script
+    return Script(code=document.source, path=document.path, project=project)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi/api/__init__.py", line 119, in __init__
+    self._inference_state = InferenceState(
+                            ^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi/inference/__init__.py", line 87, in __init__
+    environment = project.get_environment()
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi/api/project.py", line 245, in get_environment
+    self._environment = create_environment(self._environment_path, safe=False)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi/api/environment.py", line 367, in create_environment
+    return Environment(_get_executable_path(path, safe=safe), env_vars=env_vars)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi/api/environment.py", line 380, in _get_executable_path
+    raise InvalidPythonEnvironment("%s seems to be missing." % python)
+jedi.api.environment.InvalidPythonEnvironment: /home/shaiksahil0911/venv/bin/python/bin/python seems to be missing.
+
+2025-08-16 10:56:13.374 [info] [Error - 10:56:13 AM] Request textDocument/documentSymbol failed.
+2025-08-16 10:56:13.374 [info]   Message: jedi.api.environment.InvalidPythonEnvironment: /home/shaiksahil0911/venv/bin/python/bin/python seems to be missing.
+  Code: -32603 
+[object Object]
+2025-08-16 10:56:18.441 [info] ERROR:pygls.protocol.json_rpc:Failed to handle request 7 textDocument/hover HoverParams(text_document=TextDocumentIdentifier(uri='file:///home/shaiksahil0911/pathpilot/pathpilot/settings.py'), position=27:16, work_done_token=None)
+Traceback (most recent call last):
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/pygls/protocol/json_rpc.py", line 266, in _handle_request
+    self._execute_request(msg_id, handler, params)
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/pygls/protocol/json_rpc.py", line 188, in _execute_request
+    self._send_response(msg_id, handler(params))
+                                ^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi_language_server/server.py", line 399, in hover
+    jedi_script = jedi_utils.script(server.project, document)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi_language_server/jedi_utils.py", line 125, in script
+    return Script(code=document.source, path=document.path, project=project)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi/api/__init__.py", line 119, in __init__
+    self._inference_state = InferenceState(
+                            ^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi/inference/__init__.py", line 87, in __init__
+    environment = project.get_environment()
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi/api/project.py", line 245, in get_environment
+    self._environment = create_environment(self._environment_path, safe=False)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi/api/environment.py", line 367, in create_environment
+    return Environment(_get_executable_path(path, safe=safe), env_vars=env_vars)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi/api/environment.py", line 380, in _get_executable_path
+    raise InvalidPythonEnvironment("%s seems to be missing." % python)
+jedi.api.environment.InvalidPythonEnvironment: /home/shaiksahil0911/venv/bin/python/bin/python seems to be missing.
+
+2025-08-16 10:56:18.442 [info] [Error - 10:56:18 AM] Request textDocument/hover failed.
+2025-08-16 10:56:18.442 [info]   Message: jedi.api.environment.InvalidPythonEnvironment: /home/shaiksahil0911/venv/bin/python/bin/python seems to be missing.
+  Code: -32603 
+[object Object]
+2025-08-16 10:56:18.802 [info] ERROR:pygls.protocol.json_rpc:Failed to handle request 8 textDocument/codeAction CodeActionParams(text_document=TextDocumentIdentifier(uri='file:///home/shaiksahil0911/pathpilot/pathpilot/settings.py'), range=27:17-27:17, context=CodeActionContext(diagnostics=[], only=None, trigger_kind=<CodeActionTriggerKind.Automatic: 2>), work_done_token=None, partial_result_token=None)
+Traceback (most recent call last):
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/pygls/protocol/json_rpc.py", line 266, in _handle_request
+    self._execute_request(msg_id, handler, params)
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/pygls/protocol/json_rpc.py", line 188, in _execute_request
+    self._send_response(msg_id, handler(params))
+                                ^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi_language_server/server.py", line 568, in code_action
+    jedi_script = jedi_utils.script(server.project, document)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi_language_server/jedi_utils.py", line 125, in script
+    return Script(code=document.source, path=document.path, project=project)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi/api/__init__.py", line 119, in __init__
+    self._inference_state = InferenceState(
+                            ^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi/inference/__init__.py", line 87, in __init__
+    environment = project.get_environment()
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi/api/project.py", line 245, in get_environment
+    self._environment = create_environment(self._environment_path, safe=False)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi/api/environment.py", line 367, in create_environment
+    return Environment(_get_executable_path(path, safe=safe), env_vars=env_vars)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi/api/environment.py", line 380, in _get_executable_path
+    raise InvalidPythonEnvironment("%s seems to be missing." % python)
+jedi.api.environment.InvalidPythonEnvironment: /home/shaiksahil0911/venv/bin/python/bin/python seems to be missing.
+
+2025-08-16 10:56:18.803 [info] [Error - 10:56:18 AM] Request textDocument/codeAction failed.
+2025-08-16 10:56:18.803 [info]   Message: jedi.api.environment.InvalidPythonEnvironment: /home/shaiksahil0911/venv/bin/python/bin/python seems to be missing.
+  Code: -32603 
+[object Object]
+2025-08-16 10:56:19.959 [info] ERROR:pygls.protocol.json_rpc:Failed to handle request 9 textDocument/completion CompletionParams(text_document=TextDocumentIdentifier(uri='file:///home/shaiksahil0911/pathpilot/pathpilot/settings.py'), position=27:18, context=CompletionContext(trigger_kind=<CompletionTriggerKind.TriggerCharacter: 2>, trigger_character='"'), work_done_token=None, partial_result_token=None)
+Traceback (most recent call last):
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/pygls/protocol/json_rpc.py", line 266, in _handle_request
+    self._execute_request(msg_id, handler, params)
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/pygls/protocol/json_rpc.py", line 188, in _execute_request
+    self._send_response(msg_id, handler(params))
+                                ^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi_language_server/server.py", line 209, in completion
+    jedi_script = jedi_utils.script(server.project, document)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi_language_server/jedi_utils.py", line 125, in script
+    return Script(code=document.source, path=document.path, project=project)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi/api/__init__.py", line 119, in __init__
+    self._inference_state = InferenceState(
+                            ^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi/inference/__init__.py", line 87, in __init__
+    environment = project.get_environment()
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi/api/project.py", line 245, in get_environment
+    self._environment = create_environment(self._environment_path, safe=False)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi/api/environment.py", line 367, in create_environment
+    return Environment(_get_executable_path(path, safe=safe), env_vars=env_vars)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi/api/environment.py", line 380, in _get_executable_path
+    raise InvalidPythonEnvironment("%s seems to be missing." % python)
+jedi.api.environment.InvalidPythonEnvironment: /home/shaiksahil0911/venv/bin/python/bin/python seems to be missing.
+
+2025-08-16 10:56:19.960 [info] [Error - 10:56:19 AM] Request textDocument/completion failed.
+2025-08-16 10:56:19.960 [info]   Message: jedi.api.environment.InvalidPythonEnvironment: /home/shaiksahil0911/venv/bin/python/bin/python seems to be missing.
+  Code: -32603 
+[object Object]
+2025-08-16 10:56:20.189 [info] ERROR:pygls.protocol.json_rpc:Failed to handle request 10 textDocument/codeAction CodeActionParams(text_document=TextDocumentIdentifier(uri='file:///home/shaiksahil0911/pathpilot/pathpilot/settings.py'), range=27:18-27:18, context=CodeActionContext(diagnostics=[], only=None, trigger_kind=<CodeActionTriggerKind.Automatic: 2>), work_done_token=None, partial_result_token=None)
+Traceback (most recent call last):
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/pygls/protocol/json_rpc.py", line 266, in _handle_request
+    self._execute_request(msg_id, handler, params)
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/pygls/protocol/json_rpc.py", line 188, in _execute_request
+    self._send_response(msg_id, handler(params))
+                                ^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi_language_server/server.py", line 568, in code_action
+    jedi_script = jedi_utils.script(server.project, document)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi_language_server/jedi_utils.py", line 125, in script
+    return Script(code=document.source, path=document.path, project=project)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi/api/__init__.py", line 119, in __init__
+    self._inference_state = InferenceState(
+                            ^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi/inference/__init__.py", line 87, in __init__
+    environment = project.get_environment()
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi/api/project.py", line 245, in get_environment
+    self._environment = create_environment(self._environment_path, safe=False)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi/api/environment.py", line 367, in create_environment
+    return Environment(_get_executable_path(path, safe=safe), env_vars=env_vars)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi/api/environment.py", line 380, in _get_executable_path
+    raise InvalidPythonEnvironment("%s seems to be missing." % python)
+jedi.api.environment.InvalidPythonEnvironment: /home/shaiksahil0911/venv/bin/python/bin/python seems to be missing.
+
+2025-08-16 10:56:20.191 [info] [Error - 10:56:20 AM] Request textDocument/codeAction failed.
+2025-08-16 10:56:20.191 [info]   Message: jedi.api.environment.InvalidPythonEnvironment: /home/shaiksahil0911/venv/bin/python/bin/python seems to be missing.
+  Code: -32603 
+[object Object]
+2025-08-16 10:56:20.295 [info] ERROR:pygls.protocol.json_rpc:Failed to handle request 11 textDocument/documentSymbol DocumentSymbolParams(text_document=TextDocumentIdentifier(uri='file:///home/shaiksahil0911/pathpilot/pathpilot/settings.py'), work_done_token=None, partial_result_token=None)
+Traceback (most recent call last):
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/pygls/protocol/json_rpc.py", line 266, in _handle_request
+    self._execute_request(msg_id, handler, params)
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/pygls/protocol/json_rpc.py", line 188, in _execute_request
+    self._send_response(msg_id, handler(params))
+                                ^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi_language_server/server.py", line 454, in document_symbol
+    jedi_script = jedi_utils.script(server.project, document)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi_language_server/jedi_utils.py", line 125, in script
+    return Script(code=document.source, path=document.path, project=project)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi/api/__init__.py", line 119, in __init__
+    self._inference_state = InferenceState(
+                            ^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi/inference/__init__.py", line 87, in __init__
+    environment = project.get_environment()
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi/api/project.py", line 245, in get_environment
+    self._environment = create_environment(self._environment_path, safe=False)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi/api/environment.py", line 367, in create_environment
+    return Environment(_get_executable_path(path, safe=safe), env_vars=env_vars)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi/api/environment.py", line 380, in _get_executable_path
+    raise InvalidPythonEnvironment("%s seems to be missing." % python)
+jedi.api.environment.InvalidPythonEnvironment: /home/shaiksahil0911/venv/bin/python/bin/python seems to be missing.
+
+2025-08-16 10:56:20.297 [info] [Error - 10:56:20 AM] Request textDocument/documentSymbol failed.
+2025-08-16 10:56:20.297 [info]   Message: jedi.api.environment.InvalidPythonEnvironment: /home/shaiksahil0911/venv/bin/python/bin/python seems to be missing.
+  Code: -32603 
+[object Object]
+2025-08-16 10:56:20.314 [info] ERROR:pygls.protocol.json_rpc:Failed to handle request 12 textDocument/documentSymbol DocumentSymbolParams(text_document=TextDocumentIdentifier(uri='file:///home/shaiksahil0911/pathpilot/pathpilot/settings.py'), work_done_token=None, partial_result_token=None)
+Traceback (most recent call last):
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/pygls/protocol/json_rpc.py", line 266, in _handle_request
+    self._execute_request(msg_id, handler, params)
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/pygls/protocol/json_rpc.py", line 188, in _execute_request
+    self._send_response(msg_id, handler(params))
+                                ^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi_language_server/server.py", line 454, in document_symbol
+    jedi_script = jedi_utils.script(server.project, document)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi_language_server/jedi_utils.py", line 125, in script
+    return Script(code=document.source, path=document.path, project=project)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi/api/__init__.py", line 119, in __init__
+    self._inference_state = InferenceState(
+                            ^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi/inference/__init__.py", line 87, in __init__
+    environment = project.get_environment()
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi/api/project.py", line 245, in get_environment
+    self._environment = create_environment(self._environment_path, safe=False)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi/api/environment.py", line 367, in create_environment
+    return Environment(_get_executable_path(path, safe=safe), env_vars=env_vars)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi/api/environment.py", line 380, in _get_executable_path
+    raise InvalidPythonEnvironment("%s seems to be missing." % python)
+jedi.api.environment.InvalidPythonEnvironment: /home/shaiksahil0911/venv/bin/python/bin/python seems to be missing.
+
+2025-08-16 10:56:20.318 [info] [Error - 10:56:20 AM] Request textDocument/documentSymbol failed.
+2025-08-16 10:56:20.318 [info]   Message: jedi.api.environment.InvalidPythonEnvironment: /home/shaiksahil0911/venv/bin/python/bin/python seems to be missing.
+  Code: -32603 
+[object Object]
+2025-08-16 10:56:21.485 [info] ERROR:pygls.protocol.json_rpc:Failed to handle request 13 textDocument/codeAction CodeActionParams(text_document=TextDocumentIdentifier(uri='file:///home/shaiksahil0911/pathpilot/pathpilot/settings.py'), range=27:17-27:17, context=CodeActionContext(diagnostics=[], only=None, trigger_kind=<CodeActionTriggerKind.Automatic: 2>), work_done_token=None, partial_result_token=None)
+Traceback (most recent call last):
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/pygls/protocol/json_rpc.py", line 266, in _handle_request
+    self._execute_request(msg_id, handler, params)
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/pygls/protocol/json_rpc.py", line 188, in _execute_request
+    self._send_response(msg_id, handler(params))
+                                ^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi_language_server/server.py", line 568, in code_action
+    jedi_script = jedi_utils.script(server.project, document)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi_language_server/jedi_utils.py", line 125, in script
+    return Script(code=document.source, path=document.path, project=project)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi/api/__init__.py", line 119, in __init__
+    self._inference_state = InferenceState(
+                            ^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi/inference/__init__.py", line 87, in __init__
+    environment = project.get_environment()
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi/api/project.py", line 245, in get_environment
+    self._environment = create_environment(self._environment_path, safe=False)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi/api/environment.py", line 367, in create_environment
+    return Environment(_get_executable_path(path, safe=safe), env_vars=env_vars)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi/api/environment.py", line 380, in _get_executable_path
+    raise InvalidPythonEnvironment("%s seems to be missing." % python)
+jedi.api.environment.InvalidPythonEnvironment: /home/shaiksahil0911/venv/bin/python/bin/python seems to be missing.
+
+2025-08-16 10:56:21.487 [info] [Error - 10:56:21 AM] Request textDocument/codeAction failed.
+2025-08-16 10:56:21.487 [info]   Message: jedi.api.environment.InvalidPythonEnvironment: /home/shaiksahil0911/venv/bin/python/bin/python seems to be missing.
+  Code: -32603 
+[object Object]
+2025-08-16 10:56:21.573 [info] ERROR:pygls.protocol.json_rpc:Failed to handle request 14 textDocument/documentSymbol DocumentSymbolParams(text_document=TextDocumentIdentifier(uri='file:///home/shaiksahil0911/pathpilot/pathpilot/settings.py'), work_done_token=None, partial_result_token=None)
+Traceback (most recent call last):
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/pygls/protocol/json_rpc.py", line 266, in _handle_request
+    self._execute_request(msg_id, handler, params)
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/pygls/protocol/json_rpc.py", line 188, in _execute_request
+    self._send_response(msg_id, handler(params))
+                                ^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi_language_server/server.py", line 454, in document_symbol
+    jedi_script = jedi_utils.script(server.project, document)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi_language_server/jedi_utils.py", line 125, in script
+    return Script(code=document.source, path=document.path, project=project)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi/api/__init__.py", line 119, in __init__
+    self._inference_state = InferenceState(
+                            ^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi/inference/__init__.py", line 87, in __init__
+    environment = project.get_environment()
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi/api/project.py", line 245, in get_environment
+    self._environment = create_environment(self._environment_path, safe=False)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi/api/environment.py", line 367, in create_environment
+    return Environment(_get_executable_path(path, safe=safe), env_vars=env_vars)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi/api/environment.py", line 380, in _get_executable_path
+    raise InvalidPythonEnvironment("%s seems to be missing." % python)
+jedi.api.environment.InvalidPythonEnvironment: /home/shaiksahil0911/venv/bin/python/bin/python seems to be missing.
+
+2025-08-16 10:56:21.574 [info] [Error - 10:56:21 AM] Request textDocument/documentSymbol failed.
+2025-08-16 10:56:21.574 [info]   Message: jedi.api.environment.InvalidPythonEnvironment: /home/shaiksahil0911/venv/bin/python/bin/python seems to be missing.
+  Code: -32603 
+[object Object]
+2025-08-16 10:56:21.579 [info] ERROR:pygls.protocol.json_rpc:Failed to handle request 15 textDocument/documentSymbol DocumentSymbolParams(text_document=TextDocumentIdentifier(uri='file:///home/shaiksahil0911/pathpilot/pathpilot/settings.py'), work_done_token=None, partial_result_token=None)
+Traceback (most recent call last):
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/pygls/protocol/json_rpc.py", line 266, in _handle_request
+    self._execute_request(msg_id, handler, params)
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/pygls/protocol/json_rpc.py", line 188, in _execute_request
+    self._send_response(msg_id, handler(params))
+                                ^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi_language_server/server.py", line 454, in document_symbol
+    jedi_script = jedi_utils.script(server.project, document)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi_language_server/jedi_utils.py", line 125, in script
+    return Script(code=document.source, path=document.path, project=project)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi/api/__init__.py", line 119, in __init__
+    self._inference_state = InferenceState(
+                            ^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi/inference/__init__.py", line 87, in __init__
+    environment = project.get_environment()
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi/api/project.py", line 245, in get_environment
+    self._environment = create_environment(self._environment_path, safe=False)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi/api/environment.py", line 367, in create_environment
+    return Environment(_get_executable_path(path, safe=safe), env_vars=env_vars)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi/api/environment.py", line 380, in _get_executable_path
+    raise InvalidPythonEnvironment("%s seems to be missing." % python)
+jedi.api.environment.InvalidPythonEnvironment: /home/shaiksahil0911/venv/bin/python/bin/python seems to be missing.
+
+2025-08-16 10:56:21.580 [info] [Error - 10:56:21 AM] Request textDocument/documentSymbol failed.
+2025-08-16 10:56:21.581 [info]   Message: jedi.api.environment.InvalidPythonEnvironment: /home/shaiksahil0911/venv/bin/python/bin/python seems to be missing.
+  Code: -32603 
+[object Object]
+2025-08-16 10:56:21.632 [info] ERROR:pygls.protocol.json_rpc:Failed to handle request 16 textDocument/completion CompletionParams(text_document=TextDocumentIdentifier(uri='file:///home/shaiksahil0911/pathpilot/pathpilot/settings.py'), position=27:18, context=CompletionContext(trigger_kind=<CompletionTriggerKind.TriggerCharacter: 2>, trigger_character="'"), work_done_token=None, partial_result_token=None)
+Traceback (most recent call last):
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/pygls/protocol/json_rpc.py", line 266, in _handle_request
+    self._execute_request(msg_id, handler, params)
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/pygls/protocol/json_rpc.py", line 188, in _execute_request
+    self._send_response(msg_id, handler(params))
+                                ^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi_language_server/server.py", line 209, in completion
+    jedi_script = jedi_utils.script(server.project, document)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi_language_server/jedi_utils.py", line 125, in script
+    return Script(code=document.source, path=document.path, project=project)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi/api/__init__.py", line 119, in __init__
+    self._inference_state = InferenceState(
+                            ^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi/inference/__init__.py", line 87, in __init__
+    environment = project.get_environment()
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi/api/project.py", line 245, in get_environment
+    self._environment = create_environment(self._environment_path, safe=False)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi/api/environment.py", line 367, in create_environment
+    return Environment(_get_executable_path(path, safe=safe), env_vars=env_vars)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi/api/environment.py", line 380, in _get_executable_path
+    raise InvalidPythonEnvironment("%s seems to be missing." % python)
+jedi.api.environment.InvalidPythonEnvironment: /home/shaiksahil0911/venv/bin/python/bin/python seems to be missing.
+
+2025-08-16 10:56:21.633 [info] [Error - 10:56:21 AM] Request textDocument/completion failed.
+2025-08-16 10:56:21.633 [info]   Message: jedi.api.environment.InvalidPythonEnvironment: /home/shaiksahil0911/venv/bin/python/bin/python seems to be missing.
+  Code: -32603 
+[object Object]
+2025-08-16 10:56:21.891 [info] ERROR:pygls.protocol.json_rpc:Failed to handle request 17 textDocument/codeAction CodeActionParams(text_document=TextDocumentIdentifier(uri='file:///home/shaiksahil0911/pathpilot/pathpilot/settings.py'), range=27:18-27:18, context=CodeActionContext(diagnostics=[], only=None, trigger_kind=<CodeActionTriggerKind.Automatic: 2>), work_done_token=None, partial_result_token=None)
+Traceback (most recent call last):
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/pygls/protocol/json_rpc.py", line 266, in _handle_request
+    self._execute_request(msg_id, handler, params)
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/pygls/protocol/json_rpc.py", line 188, in _execute_request
+    self._send_response(msg_id, handler(params))
+                                ^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi_language_server/server.py", line 568, in code_action
+    jedi_script = jedi_utils.script(server.project, document)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi_language_server/jedi_utils.py", line 125, in script
+    return Script(code=document.source, path=document.path, project=project)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi/api/__init__.py", line 119, in __init__
+    self._inference_state = InferenceState(
+                            ^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi/inference/__init__.py", line 87, in __init__
+    environment = project.get_environment()
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi/api/project.py", line 245, in get_environment
+    self._environment = create_environment(self._environment_path, safe=False)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi/api/environment.py", line 367, in create_environment
+    return Environment(_get_executable_path(path, safe=safe), env_vars=env_vars)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi/api/environment.py", line 380, in _get_executable_path
+    raise InvalidPythonEnvironment("%s seems to be missing." % python)
+jedi.api.environment.InvalidPythonEnvironment: /home/shaiksahil0911/venv/bin/python/bin/python seems to be missing.
+
+2025-08-16 10:56:21.892 [info] [Error - 10:56:21 AM] Request textDocument/codeAction failed.
+2025-08-16 10:56:21.892 [info]   Message: jedi.api.environment.InvalidPythonEnvironment: /home/shaiksahil0911/venv/bin/python/bin/python seems to be missing.
+  Code: -32603 
+[object Object]
+2025-08-16 10:56:21.983 [info] ERROR:pygls.protocol.json_rpc:Failed to handle request 18 textDocument/documentSymbol DocumentSymbolParams(text_document=TextDocumentIdentifier(uri='file:///home/shaiksahil0911/pathpilot/pathpilot/settings.py'), work_done_token=None, partial_result_token=None)
+Traceback (most recent call last):
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/pygls/protocol/json_rpc.py", line 266, in _handle_request
+    self._execute_request(msg_id, handler, params)
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/pygls/protocol/json_rpc.py", line 188, in _execute_request
+    self._send_response(msg_id, handler(params))
+                                ^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi_language_server/server.py", line 454, in document_symbol
+    jedi_script = jedi_utils.script(server.project, document)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi_language_server/jedi_utils.py", line 125, in script
+    return Script(code=document.source, path=document.path, project=project)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi/api/__init__.py", line 119, in __init__
+    self._inference_state = InferenceState(
+                            ^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi/inference/__init__.py", line 87, in __init__
+    environment = project.get_environment()
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi/api/project.py", line 245, in get_environment
+    self._environment = create_environment(self._environment_path, safe=False)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi/api/environment.py", line 367, in create_environment
+    return Environment(_get_executable_path(path, safe=safe), env_vars=env_vars)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi/api/environment.py", line 380, in _get_executable_path
+    raise InvalidPythonEnvironment("%s seems to be missing." % python)
+jedi.api.environment.InvalidPythonEnvironment: /home/shaiksahil0911/venv/bin/python/bin/python seems to be missing.
+
+2025-08-16 10:56:21.984 [info] [Error - 10:56:21 AM] Request textDocument/documentSymbol failed.
+2025-08-16 10:56:21.984 [info]   Message: jedi.api.environment.InvalidPythonEnvironment: /home/shaiksahil0911/venv/bin/python/bin/python seems to be missing.
+  Code: -32603 
+[object Object]
+2025-08-16 10:56:21.985 [info] ERROR:pygls.protocol.json_rpc:Failed to handle request 19 textDocument/documentSymbol DocumentSymbolParams(text_document=TextDocumentIdentifier(uri='file:///home/shaiksahil0911/pathpilot/pathpilot/settings.py'), work_done_token=None, partial_result_token=None)
+Traceback (most recent call last):
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/pygls/protocol/json_rpc.py", line 266, in _handle_request
+    self._execute_request(msg_id, handler, params)
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/pygls/protocol/json_rpc.py", line 188, in _execute_request
+    self._send_response(msg_id, handler(params))
+                                ^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi_language_server/server.py", line 454, in document_symbol
+    jedi_script = jedi_utils.script(server.project, document)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi_language_server/jedi_utils.py", line 125, in script
+    return Script(code=document.source, path=document.path, project=project)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi/api/__init__.py", line 119, in __init__
+    self._inference_state = InferenceState(
+                            ^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi/inference/__init__.py", line 87, in __init__
+    environment = project.get_environment()
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi/api/project.py", line 245, in get_environment
+    self._environment = create_environment(self._environment_path, safe=False)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi/api/environment.py", line 367, in create_environment
+    return Environment(_get_executable_path(path, safe=safe), env_vars=env_vars)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi/api/environment.py", line 380, in _get_executable_path
+    raise InvalidPythonEnvironment("%s seems to be missing." % python)
+jedi.api.environment.InvalidPythonEnvironment: /home/shaiksahil0911/venv/bin/python/bin/python seems to be missing.
+
+2025-08-16 10:56:21.986 [info] [Error - 10:56:21 AM] Request textDocument/documentSymbol failed.
+2025-08-16 10:56:21.986 [info]   Message: jedi.api.environment.InvalidPythonEnvironment: /home/shaiksahil0911/venv/bin/python/bin/python seems to be missing.
+  Code: -32603 
+[object Object]
+2025-08-16 10:56:22.646 [info] ERROR:pygls.protocol.json_rpc:Failed to handle request 20 textDocument/codeAction CodeActionParams(text_document=TextDocumentIdentifier(uri='file:///home/shaiksahil0911/pathpilot/pathpilot/settings.py'), range=27:60-27:60, context=CodeActionContext(diagnostics=[], only=None, trigger_kind=<CodeActionTriggerKind.Automatic: 2>), work_done_token=None, partial_result_token=None)
+Traceback (most recent call last):
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/pygls/protocol/json_rpc.py", line 266, in _handle_request
+    self._execute_request(msg_id, handler, params)
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/pygls/protocol/json_rpc.py", line 188, in _execute_request
+    self._send_response(msg_id, handler(params))
+                                ^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi_language_server/server.py", line 568, in code_action
+    jedi_script = jedi_utils.script(server.project, document)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi_language_server/jedi_utils.py", line 125, in script
+    return Script(code=document.source, path=document.path, project=project)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi/api/__init__.py", line 119, in __init__
+    self._inference_state = InferenceState(
+                            ^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi/inference/__init__.py", line 87, in __init__
+    environment = project.get_environment()
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi/api/project.py", line 245, in get_environment
+    self._environment = create_environment(self._environment_path, safe=False)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi/api/environment.py", line 367, in create_environment
+    return Environment(_get_executable_path(path, safe=safe), env_vars=env_vars)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi/api/environment.py", line 380, in _get_executable_path
+    raise InvalidPythonEnvironment("%s seems to be missing." % python)
+jedi.api.environment.InvalidPythonEnvironment: /home/shaiksahil0911/venv/bin/python/bin/python seems to be missing.
+
+2025-08-16 10:56:22.648 [info] [Error - 10:56:22 AM] Request textDocument/codeAction failed.
+2025-08-16 10:56:22.648 [info]   Message: jedi.api.environment.InvalidPythonEnvironment: /home/shaiksahil0911/venv/bin/python/bin/python seems to be missing.
+  Code: -32603 
+[object Object]
+2025-08-16 10:56:22.741 [info] ERROR:pygls.protocol.json_rpc:Failed to handle request 21 textDocument/documentSymbol DocumentSymbolParams(text_document=TextDocumentIdentifier(uri='file:///home/shaiksahil0911/pathpilot/pathpilot/settings.py'), work_done_token=None, partial_result_token=None)
+Traceback (most recent call last):
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/pygls/protocol/json_rpc.py", line 266, in _handle_request
+    self._execute_request(msg_id, handler, params)
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/pygls/protocol/json_rpc.py", line 188, in _execute_request
+    self._send_response(msg_id, handler(params))
+                                ^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi_language_server/server.py", line 454, in document_symbol
+    jedi_script = jedi_utils.script(server.project, document)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi_language_server/jedi_utils.py", line 125, in script
+    return Script(code=document.source, path=document.path, project=project)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi/api/__init__.py", line 119, in __init__
+    self._inference_state = InferenceState(
+                            ^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi/inference/__init__.py", line 87, in __init__
+    environment = project.get_environment()
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi/api/project.py", line 245, in get_environment
+    self._environment = create_environment(self._environment_path, safe=False)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi/api/environment.py", line 367, in create_environment
+    return Environment(_get_executable_path(path, safe=safe), env_vars=env_vars)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi/api/environment.py", line 380, in _get_executable_path
+    raise InvalidPythonEnvironment("%s seems to be missing." % python)
+jedi.api.environment.InvalidPythonEnvironment: /home/shaiksahil0911/venv/bin/python/bin/python seems to be missing.
+
+2025-08-16 10:56:22.742 [info] [Error - 10:56:22 AM] Request textDocument/documentSymbol failed.
+2025-08-16 10:56:22.742 [info]   Message: jedi.api.environment.InvalidPythonEnvironment: /home/shaiksahil0911/venv/bin/python/bin/python seems to be missing.
+  Code: -32603 
+[object Object]
+2025-08-16 10:56:22.747 [info] ERROR:pygls.protocol.json_rpc:Failed to handle request 22 textDocument/documentSymbol DocumentSymbolParams(text_document=TextDocumentIdentifier(uri='file:///home/shaiksahil0911/pathpilot/pathpilot/settings.py'), work_done_token=None, partial_result_token=None)
+Traceback (most recent call last):
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/pygls/protocol/json_rpc.py", line 266, in _handle_request
+    self._execute_request(msg_id, handler, params)
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/pygls/protocol/json_rpc.py", line 188, in _execute_request
+    self._send_response(msg_id, handler(params))
+                                ^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi_language_server/server.py", line 454, in document_symbol
+    jedi_script = jedi_utils.script(server.project, document)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi_language_server/jedi_utils.py", line 125, in script
+    return Script(code=document.source, path=document.path, project=project)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi/api/__init__.py", line 119, in __init__
+    self._inference_state = InferenceState(
+                            ^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi/inference/__init__.py", line 87, in __init__
+    environment = project.get_environment()
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi/api/project.py", line 245, in get_environment
+    self._environment = create_environment(self._environment_path, safe=False)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi/api/environment.py", line 367, in create_environment
+    return Environment(_get_executable_path(path, safe=safe), env_vars=env_vars)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi/api/environment.py", line 380, in _get_executable_path
+    raise InvalidPythonEnvironment("%s seems to be missing." % python)
+jedi.api.environment.InvalidPythonEnvironment: /home/shaiksahil0911/venv/bin/python/bin/python seems to be missing.
+
+2025-08-16 10:56:22.748 [info] [Error - 10:56:22 AM] Request textDocument/documentSymbol failed.
+2025-08-16 10:56:22.748 [info]   Message: jedi.api.environment.InvalidPythonEnvironment: /home/shaiksahil0911/venv/bin/python/bin/python seems to be missing.
+  Code: -32603 
+[object Object]
+2025-08-16 10:56:27.497 [info] ERROR:pygls.protocol.json_rpc:Failed to handle request 23 textDocument/documentHighlight DocumentHighlightParams(text_document=TextDocumentIdentifier(uri='file:///home/shaiksahil0911/pathpilot/pathpilot/settings.py'), position=27:60, work_done_token=None, partial_result_token=None)
+Traceback (most recent call last):
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/pygls/protocol/json_rpc.py", line 266, in _handle_request
+    self._execute_request(msg_id, handler, params)
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/pygls/protocol/json_rpc.py", line 188, in _execute_request
+    self._send_response(msg_id, handler(params))
+                                ^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi_language_server/server.py", line 381, in highlight
+    jedi_script = jedi_utils.script(server.project, document)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi_language_server/jedi_utils.py", line 125, in script
+    return Script(code=document.source, path=document.path, project=project)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi/api/__init__.py", line 119, in __init__
+    self._inference_state = InferenceState(
+                            ^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi/inference/__init__.py", line 87, in __init__
+    environment = project.get_environment()
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi/api/project.py", line 245, in get_environment
+    self._environment = create_environment(self._environment_path, safe=False)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi/api/environment.py", line 367, in create_environment
+    return Environment(_get_executable_path(path, safe=safe), env_vars=env_vars)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi/api/environment.py", line 380, in _get_executable_path
+    raise InvalidPythonEnvironment("%s seems to be missing." % python)
+jedi.api.environment.InvalidPythonEnvironment: /home/shaiksahil0911/venv/bin/python/bin/python seems to be missing.
+
+2025-08-16 10:56:27.499 [info] [Error - 10:56:27 AM] Request textDocument/documentHighlight failed.
+2025-08-16 10:56:27.499 [info]   Message: jedi.api.environment.InvalidPythonEnvironment: /home/shaiksahil0911/venv/bin/python/bin/python seems to be missing.
+  Code: -32603 
+[object Object]

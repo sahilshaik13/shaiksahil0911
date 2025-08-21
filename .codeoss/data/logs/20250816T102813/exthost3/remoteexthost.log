@@ -1,0 +1,160 @@
+2025-08-16 10:44:57.011 [info] Extension host with pid 3807 started
+2025-08-16 10:44:57.011 [info] Lock '/home/shaiksahil0911/.codeoss/data/User/workspaceStorage/-1e1ed0aa/vscode.lock': Lock acquired.
+2025-08-16 10:44:57.176 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2025-08-16 10:44:57.177 [info] ExtensionService#_doActivateExtension ms-python.python, startup: false, activationEvent: 'onLanguage:pip-requirements'
+2025-08-16 10:44:57.178 [info] ExtensionService#_doActivateExtension vscode.configuration-editing, startup: false, activationEvent: 'onLanguage:jsonc'
+2025-08-16 10:44:57.178 [info] ExtensionService#_doActivateExtension vscode.json-language-features, startup: false, activationEvent: 'onLanguage:jsonc'
+2025-08-16 10:44:57.178 [info] ExtensionService#_doActivateExtension vscode.typescript-language-features, startup: false, activationEvent: 'onLanguage:jsonc'
+2025-08-16 10:44:57.991 [error] Error: spawn /google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python-env-tools/bin/pet ENOENT
+	at ChildProcess._handle.onexit (node:internal/child_process:285:19)
+	at onErrorNT (node:internal/child_process:483:16)
+	at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+2025-08-16 10:44:58.224 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+2025-08-16 10:44:58.337 [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+2025-08-16 10:44:58.337 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2025-08-16 10:44:59.049 [info] Eager extensions activated
+2025-08-16 10:44:59.049 [info] ExtensionService#_doActivateExtension EditorConfig.EditorConfig, startup: false, activationEvent: 'onStartupFinished'
+2025-08-16 10:44:59.050 [info] ExtensionService#_doActivateExtension google.cloud-shell, startup: false, activationEvent: 'onStartupFinished'
+2025-08-16 10:44:59.050 [info] ExtensionService#_doActivateExtension google.geminicodeassist, startup: false, activationEvent: 'onStartupFinished', root cause: googlecloudtools.cloudcode
+2025-08-16 10:44:59.050 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2025-08-16 10:44:59.051 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2025-08-16 10:45:01.353 [info] ExtensionService#_doActivateExtension googlecloudtools.cloudcode, startup: false, activationEvent: 'onStartupFinished'
+2025-08-16 10:50:01.082 [error] [ms-python.python] provider FAILED
+2025-08-16 10:50:01.102 [error] Error: jedi.api.environment.InvalidPythonEnvironment: /home/shaiksahil0911/venv/bin/python/bin/python seems to be missing.
+    at ae (/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/out/client/extension.js:2:2049071)
+    at oe (/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/out/client/extension.js:2:2047031)
+    at Immediate.<anonymous> (/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/out/client/extension.js:2:2043325)
+    at processImmediate (node:internal/timers:483:21)
+2025-08-16 10:50:01.104 [error] [ms-python.python] provider FAILED
+2025-08-16 10:50:01.104 [error] Error: jedi.api.environment.InvalidPythonEnvironment: /home/shaiksahil0911/venv/bin/python/bin/python seems to be missing.
+    at ae (/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/out/client/extension.js:2:2049071)
+    at oe (/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/out/client/extension.js:2:2047031)
+    at Immediate.<anonymous> (/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/out/client/extension.js:2:2043325)
+    at processImmediate (node:internal/timers:483:21)
+2025-08-16 10:50:01.338 [error] [ms-python.python] provider FAILED
+2025-08-16 10:50:01.339 [error] Error: jedi.api.environment.InvalidPythonEnvironment: /home/shaiksahil0911/venv/bin/python/bin/python seems to be missing.
+    at ae (/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/out/client/extension.js:2:2049071)
+    at oe (/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/out/client/extension.js:2:2047031)
+    at Immediate.<anonymous> (/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/out/client/extension.js:2:2043325)
+    at processImmediate (node:internal/timers:483:21)
+2025-08-16 10:55:50.901 [info] ExtensionService#_doActivateExtension vscode.simple-browser, startup: false, activationEvent: 'onOpenExternalUri:https'
+2025-08-16 10:56:13.096 [error] [ms-python.python] provider FAILED
+2025-08-16 10:56:13.096 [error] Error: jedi.api.environment.InvalidPythonEnvironment: /home/shaiksahil0911/venv/bin/python/bin/python seems to be missing.
+    at ae (/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/out/client/extension.js:2:2049071)
+    at oe (/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/out/client/extension.js:2:2047031)
+    at Immediate.<anonymous> (/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/out/client/extension.js:2:2043325)
+    at processImmediate (node:internal/timers:483:21)
+2025-08-16 10:56:13.098 [error] [ms-python.python] provider FAILED
+2025-08-16 10:56:13.098 [error] Error: jedi.api.environment.InvalidPythonEnvironment: /home/shaiksahil0911/venv/bin/python/bin/python seems to be missing.
+    at ae (/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/out/client/extension.js:2:2049071)
+    at oe (/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/out/client/extension.js:2:2047031)
+    at Immediate.<anonymous> (/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/out/client/extension.js:2:2043325)
+    at processImmediate (node:internal/timers:483:21)
+2025-08-16 10:56:13.374 [error] [ms-python.python] provider FAILED
+2025-08-16 10:56:13.374 [error] Error: jedi.api.environment.InvalidPythonEnvironment: /home/shaiksahil0911/venv/bin/python/bin/python seems to be missing.
+    at ae (/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/out/client/extension.js:2:2049071)
+    at oe (/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/out/client/extension.js:2:2047031)
+    at Immediate.<anonymous> (/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/out/client/extension.js:2:2043325)
+    at processImmediate (node:internal/timers:483:21)
+2025-08-16 10:56:18.442 [error] [ms-python.python] provider FAILED
+2025-08-16 10:56:18.443 [error] Error: jedi.api.environment.InvalidPythonEnvironment: /home/shaiksahil0911/venv/bin/python/bin/python seems to be missing.
+    at ae (/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/out/client/extension.js:2:2049071)
+    at oe (/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/out/client/extension.js:2:2047031)
+    at Immediate.<anonymous> (/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/out/client/extension.js:2:2043325)
+    at processImmediate (node:internal/timers:483:21)
+2025-08-16 10:56:18.804 [error] [ms-python.python] provider FAILED
+2025-08-16 10:56:18.804 [error] Error: jedi.api.environment.InvalidPythonEnvironment: /home/shaiksahil0911/venv/bin/python/bin/python seems to be missing.
+    at ae (/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/out/client/extension.js:2:2049071)
+    at oe (/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/out/client/extension.js:2:2047031)
+    at Immediate.<anonymous> (/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/out/client/extension.js:2:2043325)
+    at processImmediate (node:internal/timers:483:21)
+2025-08-16 10:56:19.960 [error] [ms-python.python] provider FAILED
+2025-08-16 10:56:19.961 [error] Error: jedi.api.environment.InvalidPythonEnvironment: /home/shaiksahil0911/venv/bin/python/bin/python seems to be missing.
+    at ae (/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/out/client/extension.js:2:2049071)
+    at oe (/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/out/client/extension.js:2:2047031)
+    at Immediate.<anonymous> (/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/out/client/extension.js:2:2043325)
+    at processImmediate (node:internal/timers:483:21)
+2025-08-16 10:56:20.191 [error] [ms-python.python] provider FAILED
+2025-08-16 10:56:20.192 [error] Error: jedi.api.environment.InvalidPythonEnvironment: /home/shaiksahil0911/venv/bin/python/bin/python seems to be missing.
+    at ae (/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/out/client/extension.js:2:2049071)
+    at oe (/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/out/client/extension.js:2:2047031)
+    at Immediate.<anonymous> (/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/out/client/extension.js:2:2043325)
+    at processImmediate (node:internal/timers:483:21)
+2025-08-16 10:56:20.297 [error] [ms-python.python] provider FAILED
+2025-08-16 10:56:20.297 [error] Error: jedi.api.environment.InvalidPythonEnvironment: /home/shaiksahil0911/venv/bin/python/bin/python seems to be missing.
+    at ae (/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/out/client/extension.js:2:2049071)
+    at oe (/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/out/client/extension.js:2:2047031)
+    at Immediate.<anonymous> (/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/out/client/extension.js:2:2043325)
+    at processImmediate (node:internal/timers:483:21)
+2025-08-16 10:56:20.318 [error] [ms-python.python] provider FAILED
+2025-08-16 10:56:20.320 [error] Error: jedi.api.environment.InvalidPythonEnvironment: /home/shaiksahil0911/venv/bin/python/bin/python seems to be missing.
+    at ae (/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/out/client/extension.js:2:2049071)
+    at oe (/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/out/client/extension.js:2:2047031)
+    at Immediate.<anonymous> (/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/out/client/extension.js:2:2043325)
+    at processImmediate (node:internal/timers:483:21)
+2025-08-16 10:56:21.487 [error] [ms-python.python] provider FAILED
+2025-08-16 10:56:21.487 [error] Error: jedi.api.environment.InvalidPythonEnvironment: /home/shaiksahil0911/venv/bin/python/bin/python seems to be missing.
+    at ae (/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/out/client/extension.js:2:2049071)
+    at oe (/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/out/client/extension.js:2:2047031)
+    at Immediate.<anonymous> (/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/out/client/extension.js:2:2043325)
+    at processImmediate (node:internal/timers:483:21)
+2025-08-16 10:56:21.574 [error] [ms-python.python] provider FAILED
+2025-08-16 10:56:21.575 [error] Error: jedi.api.environment.InvalidPythonEnvironment: /home/shaiksahil0911/venv/bin/python/bin/python seems to be missing.
+    at ae (/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/out/client/extension.js:2:2049071)
+    at oe (/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/out/client/extension.js:2:2047031)
+    at Immediate.<anonymous> (/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/out/client/extension.js:2:2043325)
+    at processImmediate (node:internal/timers:483:21)
+2025-08-16 10:56:21.581 [error] [ms-python.python] provider FAILED
+2025-08-16 10:56:21.581 [error] Error: jedi.api.environment.InvalidPythonEnvironment: /home/shaiksahil0911/venv/bin/python/bin/python seems to be missing.
+    at ae (/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/out/client/extension.js:2:2049071)
+    at oe (/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/out/client/extension.js:2:2047031)
+    at Immediate.<anonymous> (/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/out/client/extension.js:2:2043325)
+    at processImmediate (node:internal/timers:483:21)
+2025-08-16 10:56:21.633 [error] [ms-python.python] provider FAILED
+2025-08-16 10:56:21.633 [error] Error: jedi.api.environment.InvalidPythonEnvironment: /home/shaiksahil0911/venv/bin/python/bin/python seems to be missing.
+    at ae (/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/out/client/extension.js:2:2049071)
+    at oe (/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/out/client/extension.js:2:2047031)
+    at Immediate.<anonymous> (/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/out/client/extension.js:2:2043325)
+    at processImmediate (node:internal/timers:483:21)
+2025-08-16 10:56:21.892 [error] [ms-python.python] provider FAILED
+2025-08-16 10:56:21.892 [error] Error: jedi.api.environment.InvalidPythonEnvironment: /home/shaiksahil0911/venv/bin/python/bin/python seems to be missing.
+    at ae (/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/out/client/extension.js:2:2049071)
+    at oe (/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/out/client/extension.js:2:2047031)
+    at Immediate.<anonymous> (/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/out/client/extension.js:2:2043325)
+    at processImmediate (node:internal/timers:483:21)
+2025-08-16 10:56:21.984 [error] [ms-python.python] provider FAILED
+2025-08-16 10:56:21.984 [error] Error: jedi.api.environment.InvalidPythonEnvironment: /home/shaiksahil0911/venv/bin/python/bin/python seems to be missing.
+    at ae (/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/out/client/extension.js:2:2049071)
+    at oe (/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/out/client/extension.js:2:2047031)
+    at Immediate.<anonymous> (/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/out/client/extension.js:2:2043325)
+    at processImmediate (node:internal/timers:483:21)
+2025-08-16 10:56:21.986 [error] [ms-python.python] provider FAILED
+2025-08-16 10:56:21.986 [error] Error: jedi.api.environment.InvalidPythonEnvironment: /home/shaiksahil0911/venv/bin/python/bin/python seems to be missing.
+    at ae (/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/out/client/extension.js:2:2049071)
+    at oe (/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/out/client/extension.js:2:2047031)
+    at Immediate.<anonymous> (/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/out/client/extension.js:2:2043325)
+    at processImmediate (node:internal/timers:483:21)
+2025-08-16 10:56:22.648 [error] [ms-python.python] provider FAILED
+2025-08-16 10:56:22.648 [error] Error: jedi.api.environment.InvalidPythonEnvironment: /home/shaiksahil0911/venv/bin/python/bin/python seems to be missing.
+    at ae (/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/out/client/extension.js:2:2049071)
+    at oe (/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/out/client/extension.js:2:2047031)
+    at Immediate.<anonymous> (/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/out/client/extension.js:2:2043325)
+    at processImmediate (node:internal/timers:483:21)
+2025-08-16 10:56:22.742 [error] [ms-python.python] provider FAILED
+2025-08-16 10:56:22.742 [error] Error: jedi.api.environment.InvalidPythonEnvironment: /home/shaiksahil0911/venv/bin/python/bin/python seems to be missing.
+    at ae (/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/out/client/extension.js:2:2049071)
+    at oe (/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/out/client/extension.js:2:2047031)
+    at Immediate.<anonymous> (/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/out/client/extension.js:2:2043325)
+    at processImmediate (node:internal/timers:483:21)
+2025-08-16 10:56:22.748 [error] [ms-python.python] provider FAILED
+2025-08-16 10:56:22.748 [error] Error: jedi.api.environment.InvalidPythonEnvironment: /home/shaiksahil0911/venv/bin/python/bin/python seems to be missing.
+    at ae (/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/out/client/extension.js:2:2049071)
+    at oe (/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/out/client/extension.js:2:2047031)
+    at Immediate.<anonymous> (/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/out/client/extension.js:2:2043325)
+    at processImmediate (node:internal/timers:483:21)
+2025-08-16 10:56:27.499 [error] [ms-python.python] provider FAILED
+2025-08-16 10:56:27.499 [error] Error: jedi.api.environment.InvalidPythonEnvironment: /home/shaiksahil0911/venv/bin/python/bin/python seems to be missing.
+    at ae (/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/out/client/extension.js:2:2049071)
+    at oe (/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/out/client/extension.js:2:2047031)
+    at Immediate.<anonymous> (/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/out/client/extension.js:2:2043325)
+    at processImmediate (node:internal/timers:483:21)

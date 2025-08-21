@@ -1,0 +1,12 @@
+Django==5.1
+psycopg2-binary==2.9.9
+gunicorn==22.0.0
+python-dotenv==1.0.1
+numpy==2.0.2
+pandas==2.2.2
+scikit-learn==1.5.1
+joblib==1.4.2
+textblob==0.17.1
+cloud-sql-python-connector[pg8000]==1.5.0  # For Cloud SQL connections
+SQLAlchemy==2.0.35  # For connection pooling
+google-auth==2.35.0  # Provides google.oauth2 for service accounts

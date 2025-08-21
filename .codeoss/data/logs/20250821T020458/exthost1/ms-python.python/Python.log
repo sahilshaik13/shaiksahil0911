@@ -1,0 +1,40 @@
+2025-08-21 02:05:04.077 [warning] Dir "/home/shaiksahil0911/.pixi/envs" is not watchable (directory does not exist)
+2025-08-21 02:05:04.206 [info] Running installed packages checker:  {
+  id: '/bin/python',
+  sysPrefix: '/usr',
+  envType: 'Global',
+  envName: '',
+  envPath: '',
+  path: '/bin/python',
+  architecture: 3,
+  sysVersion: '3.12.3 (main, Jun 18 2025, 17:59:45) [GCC 13.3.0]',
+  version: {
+    raw: '3.12.3',
+    major: 3,
+    minor: 12,
+    patch: 3,
+    build: [],
+    prerelease: [ 'final', '0' ]
+  },
+  displayName: 'Python 3.12.3 64-bit',
+  detailedDisplayName: 'Python 3.12.3 64-bit',
+  type: undefined
+} /google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/installed_check.py /home/shaiksahil0911/pathpilot/requirements.txt
+2025-08-21 02:05:04.206 [info] > /bin/python /google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/installed_check.py ./pathpilot/requirements.txt
+2025-08-21 02:05:04.207 [info] Python interpreter path: /bin/python
+2025-08-21 02:05:04.360 [info] > pyenv which python
+2025-08-21 02:05:04.360 [info] cwd: .
+2025-08-21 02:05:08.675 [info] Starting Jedi language server for shaiksahil0911.
+2025-08-21 02:45:31.532 [info] Discover tests for workspace name: shaiksahil0911 - uri: /home/shaiksahil0911/pathpilot/pathpilot/settings.py
+2025-08-21 02:48:00.631 [info] Discover tests for workspace name: shaiksahil0911 - uri: /home/shaiksahil0911/pathpilot/pathpilot/settings.py
+2025-08-21 02:48:01.686 [info] Discover tests for workspace name: shaiksahil0911 - uri: /home/shaiksahil0911/pathpilot/pathpilot/settings.py
+2025-08-21 02:53:45.521 [info] Discover tests for workspace name: shaiksahil0911 - uri: /home/shaiksahil0911/pathpilot/pathpilot/settings.py
+2025-08-21 02:53:47.312 [info] Discover tests for workspace name: shaiksahil0911 - uri: /home/shaiksahil0911/pathpilot/pathpilot/settings.py
+2025-08-21 02:54:05.696 [info] Discover tests for workspace name: shaiksahil0911 - uri: /home/shaiksahil0911/pathpilot/pathpilot/settings.py
+2025-08-21 02:54:10.493 [info] Discover tests for workspace name: shaiksahil0911 - uri: /home/shaiksahil0911/pathpilot/pathpilot/settings.py
+2025-08-21 02:54:11.586 [info] Discover tests for workspace name: shaiksahil0911 - uri: /home/shaiksahil0911/pathpilot/pathpilot/settings.py
+2025-08-21 02:54:11.997 [info] Discover tests for workspace name: shaiksahil0911 - uri: /home/shaiksahil0911/pathpilot/pathpilot/settings.py
+2025-08-21 03:10:11.012 [info] Discover tests for workspace name: shaiksahil0911 - uri: /home/shaiksahil0911/pathpilot/pathpilot/settings.py
+2025-08-21 03:10:11.672 [info] Discover tests for workspace name: shaiksahil0911 - uri: /home/shaiksahil0911/pathpilot/pathpilot/settings.py
+2025-08-21 03:58:20.057 [info] Discover tests for workspace name: shaiksahil0911 - uri: /home/shaiksahil0911/pathpilot/pathpilot/settings.py
+2025-08-21 03:58:20.646 [info] Discover tests for workspace name: shaiksahil0911 - uri: /home/shaiksahil0911/pathpilot/pathpilot/settings.py

@@ -1,0 +1,61 @@
+2025-08-20 16:52:06.561 [info] Extension host with pid 1249 started
+2025-08-20 16:52:06.577 [info] Lock '/home/shaiksahil0911/.codeoss/data/User/workspaceStorage/-1e1ed0aa/vscode.lock': Lock acquired.
+2025-08-20 16:52:06.714 [info] ExtensionService#_doActivateExtension google.geminicodeassist, startup: false, activationEvent: 'onView:cloudcode.gemini.chatView'
+2025-08-20 16:52:06.715 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2025-08-20 16:52:06.715 [info] ExtensionService#_doActivateExtension ms-python.python, startup: false, activationEvent: 'onLanguage:python'
+2025-08-20 16:52:06.715 [info] ExtensionService#_doActivateExtension vscode.configuration-editing, startup: false, activationEvent: 'onLanguage:jsonc'
+2025-08-20 16:52:06.716 [info] ExtensionService#_doActivateExtension vscode.json-language-features, startup: false, activationEvent: 'onLanguage:jsonc'
+2025-08-20 16:52:06.716 [info] ExtensionService#_doActivateExtension vscode.typescript-language-features, startup: false, activationEvent: 'onLanguage:jsonc'
+2025-08-20 16:52:08.987 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+2025-08-20 16:52:09.029 [info] ExtensionService#_doActivateExtension google.cloud-shell, startup: false, activationEvent: 'onTerminalProfile:cloudshell.default'
+2025-08-20 16:52:09.191 [error] Error: spawn /google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python-env-tools/bin/pet ENOENT
+	at ChildProcess._handle.onexit (node:internal/child_process:285:19)
+	at onErrorNT (node:internal/child_process:483:16)
+	at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+2025-08-20 16:52:09.201 [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+2025-08-20 16:52:09.202 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2025-08-20 16:52:09.711 [info] Eager extensions activated
+2025-08-20 16:52:09.711 [info] ExtensionService#_doActivateExtension EditorConfig.EditorConfig, startup: false, activationEvent: 'onStartupFinished'
+2025-08-20 16:52:09.715 [info] ExtensionService#_doActivateExtension googlecloudtools.cloudcode, startup: false, activationEvent: 'onStartupFinished'
+2025-08-20 16:52:09.716 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2025-08-20 16:52:09.716 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2025-08-20 17:23:02.271 [info] ExtensionService#_doActivateExtension vscode.html-language-features, startup: false, activationEvent: 'onLanguage:html'
+2025-08-20 17:34:58.607 [error] EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, stat '/home/shaiksahil0911/.local/lib/python3.12/site-packages/pytz-2025.2.dist-info/INSTALLER6cwnf1v_.tmp'
+    at Function.e (file:///google/devshell/editor/code-oss-for-cloud-shell/out/vs/workbench/api/node/extensionHostProcess.js:119:18064)
+    at Object.stat (file:///google/devshell/editor/code-oss-for-cloud-shell/out/vs/workbench/api/node/extensionHostProcess.js:119:16011)
+    at t.ChatViewProvider.uri [as addFileOrFolder] (/google/devshell/editor/code-oss-for-cloud-shell/extensions/geminicodeassist/dist/webpack:/gemini_code_assist/src/ai-companion/chat/chat_view_provider.ts:224:11)
+    at ed.value (/google/devshell/editor/code-oss-for-cloud-shell/extensions/geminicodeassist/dist/webpack:/gemini_code_assist/src/ai-companion/chat/chat_view_provider.ts:209:52)
+2025-08-20 17:36:39.486 [info] ExtensionService#_doActivateExtension vscode.simple-browser, startup: false, activationEvent: 'onOpenExternalUri:https'
+2025-08-20 17:42:43.167 [error] EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, stat '/home/shaiksahil0911/pathpilot/db.sqlite3-journal'
+    at Function.e (file:///google/devshell/editor/code-oss-for-cloud-shell/out/vs/workbench/api/node/extensionHostProcess.js:119:18064)
+    at Object.stat (file:///google/devshell/editor/code-oss-for-cloud-shell/out/vs/workbench/api/node/extensionHostProcess.js:119:16011)
+    at t.ChatViewProvider.uri [as addFileOrFolder] (/google/devshell/editor/code-oss-for-cloud-shell/extensions/geminicodeassist/dist/webpack:/gemini_code_assist/src/ai-companion/chat/chat_view_provider.ts:224:11)
+    at ed.value (/google/devshell/editor/code-oss-for-cloud-shell/extensions/geminicodeassist/dist/webpack:/gemini_code_assist/src/ai-companion/chat/chat_view_provider.ts:209:52)
+2025-08-20 17:44:11.678 [error] EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, stat '/home/shaiksahil0911/pathpilot/db.sqlite3-journal'
+    at Function.e (file:///google/devshell/editor/code-oss-for-cloud-shell/out/vs/workbench/api/node/extensionHostProcess.js:119:18064)
+    at Object.stat (file:///google/devshell/editor/code-oss-for-cloud-shell/out/vs/workbench/api/node/extensionHostProcess.js:119:16011)
+    at t.ChatViewProvider.uri [as addFileOrFolder] (/google/devshell/editor/code-oss-for-cloud-shell/extensions/geminicodeassist/dist/webpack:/gemini_code_assist/src/ai-companion/chat/chat_view_provider.ts:224:11)
+    at ed.value (/google/devshell/editor/code-oss-for-cloud-shell/extensions/geminicodeassist/dist/webpack:/gemini_code_assist/src/ai-companion/chat/chat_view_provider.ts:209:52)
+2025-08-20 17:44:49.439 [error] EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, stat '/home/shaiksahil0911/pathpilot/db.sqlite3-journal'
+    at Function.e (file:///google/devshell/editor/code-oss-for-cloud-shell/out/vs/workbench/api/node/extensionHostProcess.js:119:18064)
+    at Object.stat (file:///google/devshell/editor/code-oss-for-cloud-shell/out/vs/workbench/api/node/extensionHostProcess.js:119:16011)
+    at t.ChatViewProvider.uri [as addFileOrFolder] (/google/devshell/editor/code-oss-for-cloud-shell/extensions/geminicodeassist/dist/webpack:/gemini_code_assist/src/ai-companion/chat/chat_view_provider.ts:224:11)
+    at ed.value (/google/devshell/editor/code-oss-for-cloud-shell/extensions/geminicodeassist/dist/webpack:/gemini_code_assist/src/ai-companion/chat/chat_view_provider.ts:209:52)
+2025-08-20 17:45:15.493 [error] EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, stat '/home/shaiksahil0911/pathpilot/db.sqlite3-journal'
+    at Function.e (file:///google/devshell/editor/code-oss-for-cloud-shell/out/vs/workbench/api/node/extensionHostProcess.js:119:18064)
+    at Object.stat (file:///google/devshell/editor/code-oss-for-cloud-shell/out/vs/workbench/api/node/extensionHostProcess.js:119:16011)
+    at t.ChatViewProvider.uri [as addFileOrFolder] (/google/devshell/editor/code-oss-for-cloud-shell/extensions/geminicodeassist/dist/webpack:/gemini_code_assist/src/ai-companion/chat/chat_view_provider.ts:224:11)
+    at ed.value (/google/devshell/editor/code-oss-for-cloud-shell/extensions/geminicodeassist/dist/webpack:/gemini_code_assist/src/ai-companion/chat/chat_view_provider.ts:209:52)
+2025-08-20 17:45:21.007 [error] EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, stat '/home/shaiksahil0911/pathpilot/db.sqlite3-journal'
+    at Function.e (file:///google/devshell/editor/code-oss-for-cloud-shell/out/vs/workbench/api/node/extensionHostProcess.js:119:18064)
+    at Object.stat (file:///google/devshell/editor/code-oss-for-cloud-shell/out/vs/workbench/api/node/extensionHostProcess.js:119:16011)
+    at t.ChatViewProvider.uri [as addFileOrFolder] (/google/devshell/editor/code-oss-for-cloud-shell/extensions/geminicodeassist/dist/webpack:/gemini_code_assist/src/ai-companion/chat/chat_view_provider.ts:224:11)
+    at ed.value (/google/devshell/editor/code-oss-for-cloud-shell/extensions/geminicodeassist/dist/webpack:/gemini_code_assist/src/ai-companion/chat/chat_view_provider.ts:209:52)
+2025-08-20 17:53:01.488 [error] EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, stat '/home/shaiksahil0911/.cache/cloud-code/CLOUDCODE_BINARY_FROM_ZIP_LOCK'
+    at Function.e (file:///google/devshell/editor/code-oss-for-cloud-shell/out/vs/workbench/api/node/extensionHostProcess.js:119:18064)
+    at Object.stat (file:///google/devshell/editor/code-oss-for-cloud-shell/out/vs/workbench/api/node/extensionHostProcess.js:119:16011)
+    at t.ChatViewProvider.uri [as addFileOrFolder] (/google/devshell/editor/code-oss-for-cloud-shell/extensions/geminicodeassist/dist/webpack:/gemini_code_assist/src/ai-companion/chat/chat_view_provider.ts:224:11)
+    at ed.value (/google/devshell/editor/code-oss-for-cloud-shell/extensions/geminicodeassist/dist/webpack:/gemini_code_assist/src/ai-companion/chat/chat_view_provider.ts:209:52)
+2025-08-20 18:06:55.330 [info] Extension host terminating: received terminate message from renderer
+2025-08-20 18:06:55.330 [info] Lock '/home/shaiksahil0911/.codeoss/data/User/workspaceStorage/-1e1ed0aa/vscode.lock': Marking the lockfile as scheduled to be released in 6000 ms.
+2025-08-20 18:06:55.382 [info] Extension host with pid 1249 exiting with code 0

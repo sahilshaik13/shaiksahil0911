@@ -1,0 +1,15 @@
+# Core framework
+Django==5.1                     # web framework
+
+# PostgreSQL driver
+psycopg2-binary==2.9.7          # Cloud SQL connector
+
+# Data / ML stack
+numpy==1.24.3
+pandas==2.0.3
+scikit-learn==1.3.0
+joblib==1.3.0
+textblob==0.17.1                # basic NLP for sentiment
+
+# Env-file support (local dev / Cloud Run)
+python-dotenv==1.0.0

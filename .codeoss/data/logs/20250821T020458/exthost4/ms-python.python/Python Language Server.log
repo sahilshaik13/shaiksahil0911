@@ -1,0 +1,101 @@
+2025-08-21 05:01:20.291 [info] WARNING:pygls.protocol.json_rpc:Cancel notification for unknown message id "12"
+
+2025-08-21 05:01:20.306 [info] WARNING:pygls.protocol.json_rpc:Cancel notification for unknown message id "10"
+
+2025-08-21 05:34:07.343 [info] WARNING:pygls.protocol.json_rpc:Cancel notification for unknown message id "51"
+
+2025-08-21 05:45:36.382 [info] WARNING:pygls.protocol.json_rpc:Cancel notification for unknown message id "89"
+
+2025-08-21 05:48:45.908 [info] WARNING:pygls.protocol.json_rpc:Cancel notification for unknown message id "109"
+
+2025-08-21 06:21:12.914 [info] WARNING:pygls.protocol.json_rpc:Cancel notification for unknown message id "164"
+
+2025-08-21 06:21:44.523 [info] WARNING:pygls.protocol.json_rpc:Cancel notification for unknown message id "182"
+
+2025-08-21 06:24:44.362 [info] WARNING:pygls.protocol.json_rpc:Cancel notification for unknown message id "193"
+WARNING:pygls.protocol.json_rpc:Cancel notification for unknown message id "194"
+
+2025-08-21 06:48:09.452 [info] WARNING:pygls.protocol.json_rpc:Cancel notification for unknown message id "274"
+
+2025-08-21 06:50:20.609 [info] WARNING:pygls.protocol.json_rpc:Cancel notification for unknown message id "286"
+
+2025-08-21 06:50:20.610 [info] WARNING:pygls.protocol.json_rpc:Cancel notification for unknown message id "287"
+
+2025-08-21 06:50:20.649 [info] WARNING:pygls.protocol.json_rpc:Cancel notification for unknown message id "290"
+
+2025-08-21 06:50:20.651 [info] WARNING:pygls.protocol.json_rpc:Cancel notification for unknown message id "289"
+
+2025-08-21 06:50:20.652 [info] WARNING:pygls.protocol.json_rpc:Cancel notification for unknown message id "288"
+
+2025-08-21 07:20:18.090 [info] WARNING:pygls.protocol.json_rpc:Cancel notification for unknown message id "391"
+
+2025-08-21 07:20:40.255 [info] WARNING:pygls.protocol.json_rpc:Cancel notification for unknown message id "404"
+
+2025-08-21 07:20:40.259 [info] WARNING:pygls.protocol.json_rpc:Cancel notification for unknown message id "406"
+
+2025-08-21 07:28:13.177 [info] ERROR:pygls.protocol.json_rpc:Failed to handle request 415 textDocument/hover HoverParams(text_document=TextDocumentIdentifier(uri='file:///home/shaiksahil0911/pathpilot/app/ml_service.py'), position=7:8, work_done_token=None)
+Traceback (most recent call last):
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/pygls/protocol/json_rpc.py", line 266, in _handle_request
+    self._execute_request(msg_id, handler, params)
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/pygls/protocol/json_rpc.py", line 188, in _execute_request
+    self._send_response(msg_id, handler(params))
+                                ^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi_language_server/server.py", line 402, in hover
+    hover_text = jedi_utils.hover_text(
+                 ^^^^^^^^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi_language_server/jedi_utils.py", line 657, in hover_text
+    if _hover_ignore(name, initialization_options):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi_language_server/jedi_utils.py", line 638, in _hover_ignore
+    ignore_type: HoverDisableOptions = getattr(
+                                       ^^^^^^^^
+AttributeError: 'HoverDisable' object has no attribute 'namespace_'
+
+2025-08-21 07:28:13.180 [info] [Error - 7:28:13 AM] Request textDocument/hover failed.
+2025-08-21 07:28:13.180 [info]   Message: AttributeError: 'HoverDisable' object has no attribute 'namespace_'
+  Code: -32603 
+[object Object]
+2025-08-21 07:28:21.692 [info] WARNING:pygls.protocol.json_rpc:Cancel notification for unknown message id "421"
+
+2025-08-21 07:28:47.637 [info] WARNING:pygls.protocol.json_rpc:Cancel notification for unknown message id "436"
+
+2025-08-21 07:34:48.721 [info] WARNING:pygls.protocol.json_rpc:Cancel notification for unknown message id "461"
+
+2025-08-21 07:44:32.452 [info] WARNING:pygls.protocol.json_rpc:Cancel notification for unknown message id "489"
+
+2025-08-21 08:05:48.920 [info] ERROR:pygls.protocol.json_rpc:Failed to handle request 521 textDocument/codeAction CodeActionParams(text_document=TextDocumentIdentifier(uri='file:///home/shaiksahil0911/pathpilot/app/models.py'), range=442:27-442:27, context=CodeActionContext(diagnostics=[], only=None, trigger_kind=<CodeActionTriggerKind.Automatic: 2>), work_done_token=None, partial_result_token=None)
+Traceback (most recent call last):
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/pygls/protocol/json_rpc.py", line 266, in _handle_request
+    self._execute_request(msg_id, handler, params)
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/pygls/protocol/json_rpc.py", line 188, in _execute_request
+    self._send_response(msg_id, handler(params))
+                                ^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi_language_server/server.py", line 599, in code_action
+    extract_variable_refactoring = jedi_script.extract_variable(
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi/api/helpers.py", line 487, in wrapper
+    return func(self, line, column, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi/api/__init__.py", line 628, in extract_variable
+    return extract_variable(
+           ^^^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi/api/refactoring/extract.py", line 19, in extract_variable
+    nodes = _find_nodes(module_node, pos, until_pos)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi/api/refactoring/extract.py", line 87, in _find_nodes
+    nodes = _remove_unwanted_expression_nodes(parent_node, pos, until_pos)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi/api/refactoring/extract.py", line 198, in _remove_unwanted_expression_nodes
+    nodes[0:1] = _remove_unwanted_expression_nodes(nodes[0], pos, until_pos)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/lib/jedilsp/jedi/api/refactoring/extract.py", line 196, in _remove_unwanted_expression_nodes
+    nodes = nodes[start_index:end_index + 1]
+                  ^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'start_index' where it is not associated with a value
+
+2025-08-21 08:05:48.922 [info] [Error - 8:05:48 AM] Request textDocument/codeAction failed.
+2025-08-21 08:05:48.922 [info]   Message: UnboundLocalError: cannot access local variable 'start_index' where it is not associated with a value
+  Code: -32603 
+[object Object]
+2025-08-21 08:05:48.923 [info] WARNING:pygls.protocol.json_rpc:Cancel notification for unknown message id "520"
+

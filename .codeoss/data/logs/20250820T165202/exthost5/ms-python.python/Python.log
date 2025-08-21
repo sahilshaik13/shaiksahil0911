@@ -1,0 +1,214 @@
+2025-08-20 19:33:46.250 [warning] Dir "/home/shaiksahil0911/.pixi/envs" is not watchable (directory does not exist)
+2025-08-20 19:33:46.337 [info] Python interpreter path: /bin/python
+2025-08-20 19:33:46.458 [info] > pyenv which python
+2025-08-20 19:33:46.459 [info] cwd: .
+2025-08-20 19:33:49.095 [info] Starting Jedi language server for shaiksahil0911.
+2025-08-20 19:40:40.380 [info] Running installed packages checker:  {
+  id: '/bin/python',
+  sysPrefix: '/usr',
+  envType: 'Global',
+  envName: '',
+  envPath: '',
+  path: '/bin/python',
+  architecture: 3,
+  sysVersion: '3.12.3 (main, Jun 18 2025, 17:59:45) [GCC 13.3.0]',
+  version: {
+    raw: '3.12.3',
+    major: 3,
+    minor: 12,
+    patch: 3,
+    build: [],
+    prerelease: [ 'final', '0' ]
+  },
+  displayName: 'Python 3.12.3 64-bit',
+  detailedDisplayName: 'Python 3.12.3 64-bit',
+  type: undefined
+} /google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/installed_check.py /home/shaiksahil0911/pathpilot/requirements.txt
+2025-08-20 19:40:40.380 [info] > /bin/python /google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/installed_check.py ./pathpilot/requirements.txt
+2025-08-20 19:42:41.346 [info] Discover tests for workspace name: shaiksahil0911 - uri: /home/shaiksahil0911/pathpilot/pathpilot/settings.py
+2025-08-20 19:42:43.284 [info] Discover tests for workspace name: shaiksahil0911 - uri: /home/shaiksahil0911/pathpilot/pathpilot/settings.py
+2025-08-20 19:42:44.547 [info] Discover tests for workspace name: shaiksahil0911 - uri: /home/shaiksahil0911/pathpilot/pathpilot/settings.py
+2025-08-20 19:42:51.712 [info] Discover tests for workspace name: shaiksahil0911 - uri: /home/shaiksahil0911/pathpilot/pathpilot/settings.py
+2025-08-20 19:42:52.941 [info] Discover tests for workspace name: shaiksahil0911 - uri: /home/shaiksahil0911/pathpilot/pathpilot/settings.py
+2025-08-20 19:42:56.083 [info] Discover tests for workspace name: shaiksahil0911 - uri: /home/shaiksahil0911/pathpilot/pathpilot/settings.py
+2025-08-20 19:43:11.397 [info] Discover tests for workspace name: shaiksahil0911 - uri: /home/shaiksahil0911/pathpilot/pathpilot/settings.py
+2025-08-20 19:43:23.461 [info] Discover tests for workspace name: shaiksahil0911 - uri: /home/shaiksahil0911/pathpilot/pathpilot/settings.py
+2025-08-20 19:43:42.786 [info] Discover tests for workspace name: shaiksahil0911 - uri: /home/shaiksahil0911/pathpilot/pathpilot/settings.py
+2025-08-20 19:43:52.712 [info] Discover tests for workspace name: shaiksahil0911 - uri: /home/shaiksahil0911/pathpilot/pathpilot/settings.py
+2025-08-20 19:43:55.419 [info] Discover tests for workspace name: shaiksahil0911 - uri: /home/shaiksahil0911/pathpilot/pathpilot/settings.py
+2025-08-20 19:49:46.428 [info] Running installed packages checker:  {
+  id: '/bin/python',
+  sysPrefix: '/usr',
+  envType: 'Global',
+  envName: '',
+  envPath: '',
+  path: '/bin/python',
+  architecture: 3,
+  sysVersion: '3.12.3 (main, Jun 18 2025, 17:59:45) [GCC 13.3.0]',
+  version: {
+    raw: '3.12.3',
+    major: 3,
+    minor: 12,
+    patch: 3,
+    build: [],
+    prerelease: [ 'final', '0' ]
+  },
+  displayName: 'Python 3.12.3 64-bit',
+  detailedDisplayName: 'Python 3.12.3 64-bit',
+  type: undefined
+} /google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/installed_check.py /home/shaiksahil0911/pathpilot/requirements.txt
+2025-08-20 19:49:46.428 [info] > /bin/python /google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/installed_check.py ./pathpilot/requirements.txt
+2025-08-20 19:49:46.732 [info] Running installed packages checker:  {
+  id: '/bin/python',
+  sysPrefix: '/usr',
+  envType: 'Global',
+  envName: '',
+  envPath: '',
+  path: '/bin/python',
+  architecture: 3,
+  sysVersion: '3.12.3 (main, Jun 18 2025, 17:59:45) [GCC 13.3.0]',
+  version: {
+    raw: '3.12.3',
+    major: 3,
+    minor: 12,
+    patch: 3,
+    build: [],
+    prerelease: [ 'final', '0' ]
+  },
+  displayName: 'Python 3.12.3 64-bit',
+  detailedDisplayName: 'Python 3.12.3 64-bit',
+  type: undefined
+} /google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/installed_check.py /home/shaiksahil0911/pathpilot/requirements.txt
+2025-08-20 19:49:46.732 [info] > /bin/python /google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/installed_check.py ./pathpilot/requirements.txt
+2025-08-20 19:51:34.342 [info] Running installed packages checker:  {
+  id: '/bin/python',
+  sysPrefix: '/usr',
+  envType: 'Global',
+  envName: '',
+  envPath: '',
+  path: '/bin/python',
+  architecture: 3,
+  sysVersion: '3.12.3 (main, Jun 18 2025, 17:59:45) [GCC 13.3.0]',
+  version: {
+    raw: '3.12.3',
+    major: 3,
+    minor: 12,
+    patch: 3,
+    build: [],
+    prerelease: [ 'final', '0' ]
+  },
+  displayName: 'Python 3.12.3 64-bit',
+  detailedDisplayName: 'Python 3.12.3 64-bit',
+  type: undefined
+} /google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/installed_check.py /home/shaiksahil0911/pathpilot/requirements.txt
+2025-08-20 19:51:34.342 [info] > /bin/python /google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/installed_check.py ./pathpilot/requirements.txt
+2025-08-20 19:52:47.937 [info] Running installed packages checker:  {
+  id: '/bin/python',
+  sysPrefix: '/usr',
+  envType: 'Global',
+  envName: '',
+  envPath: '',
+  path: '/bin/python',
+  architecture: 3,
+  sysVersion: '3.12.3 (main, Jun 18 2025, 17:59:45) [GCC 13.3.0]',
+  version: {
+    raw: '3.12.3',
+    major: 3,
+    minor: 12,
+    patch: 3,
+    build: [],
+    prerelease: [ 'final', '0' ]
+  },
+  displayName: 'Python 3.12.3 64-bit',
+  detailedDisplayName: 'Python 3.12.3 64-bit',
+  type: undefined
+} /google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/installed_check.py /home/shaiksahil0911/pathpilot/requirements.txt
+2025-08-20 19:52:47.937 [info] > /bin/python /google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/installed_check.py ./pathpilot/requirements.txt
+2025-08-20 19:52:52.906 [info] Running installed packages checker:  {
+  id: '/bin/python',
+  sysPrefix: '/usr',
+  envType: 'Global',
+  envName: '',
+  envPath: '',
+  path: '/bin/python',
+  architecture: 3,
+  sysVersion: '3.12.3 (main, Jun 18 2025, 17:59:45) [GCC 13.3.0]',
+  version: {
+    raw: '3.12.3',
+    major: 3,
+    minor: 12,
+    patch: 3,
+    build: [],
+    prerelease: [ 'final', '0' ]
+  },
+  displayName: 'Python 3.12.3 64-bit',
+  detailedDisplayName: 'Python 3.12.3 64-bit',
+  type: undefined
+} /google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/installed_check.py /home/shaiksahil0911/pathpilot/requirements.txt
+2025-08-20 19:52:52.906 [info] > /bin/python /google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/installed_check.py ./pathpilot/requirements.txt
+2025-08-20 19:56:03.970 [info] Running installed packages checker:  {
+  id: '/bin/python',
+  sysPrefix: '/usr',
+  envType: 'Global',
+  envName: '',
+  envPath: '',
+  path: '/bin/python',
+  architecture: 3,
+  sysVersion: '3.12.3 (main, Jun 18 2025, 17:59:45) [GCC 13.3.0]',
+  version: {
+    raw: '3.12.3',
+    major: 3,
+    minor: 12,
+    patch: 3,
+    build: [],
+    prerelease: [ 'final', '0' ]
+  },
+  displayName: 'Python 3.12.3 64-bit',
+  detailedDisplayName: 'Python 3.12.3 64-bit',
+  type: undefined
+} /google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/installed_check.py /home/shaiksahil0911/pathpilot/requirements.txt
+2025-08-20 19:56:03.970 [info] > /bin/python /google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/installed_check.py ./pathpilot/requirements.txt
+2025-08-20 20:11:07.673 [info] Running installed packages checker:  {
+  id: '/bin/python',
+  sysPrefix: '/usr',
+  envType: 'Global',
+  envName: '',
+  envPath: '',
+  path: '/bin/python',
+  architecture: 3,
+  sysVersion: '3.12.3 (main, Jun 18 2025, 17:59:45) [GCC 13.3.0]',
+  version: {
+    raw: '3.12.3',
+    major: 3,
+    minor: 12,
+    patch: 3,
+    build: [],
+    prerelease: [ 'final', '0' ]
+  },
+  displayName: 'Python 3.12.3 64-bit',
+  detailedDisplayName: 'Python 3.12.3 64-bit',
+  type: undefined
+} /google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/installed_check.py /home/shaiksahil0911/pathpilot/requirements.txt
+2025-08-20 20:11:07.674 [info] > /bin/python /google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/installed_check.py ./pathpilot/requirements.txt
+2025-08-20 20:28:24.768 [info] Running installed packages checker:  {
+  id: '/bin/python',
+  sysPrefix: '/usr',
+  envType: 'Global',
+  envName: '',
+  envPath: '',
+  path: '/bin/python',
+  architecture: 3,
+  sysVersion: '3.12.3 (main, Jun 18 2025, 17:59:45) [GCC 13.3.0]',
+  version: {
+    raw: '3.12.3',
+    major: 3,
+    minor: 12,
+    patch: 3,
+    build: [],
+    prerelease: [ 'final', '0' ]
+  },
+  displayName: 'Python 3.12.3 64-bit',
+  detailedDisplayName: 'Python 3.12.3 64-bit',
+  type: undefined
+} /google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/installed_check.py /home/shaiksahil0911/pathpilot/requirements.txt
+2025-08-20 20:28:24.768 [info] > /bin/python /google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/installed_check.py ./pathpilot/requirements.txt

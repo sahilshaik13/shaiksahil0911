@@ -1,0 +1,46 @@
+runtime: python
+env: flex                  # Specifies Flexible Environment
+runtime_config:
+  operating_system: "ubuntu22"  # Required for Python 3.8+; uses buildpacks
+  runtime_version: "3.12"    # Pins to Python 3.12; change to "3.13" for latest
+
+entrypoint: gunicorn --bind :$PORT --timeout 120 --workers 3 --preload pathpilot.wsgi:application
+
+# Resource configuration (custom machine type for 8 vCPUs and 8 GB RAM)
+resources:
+  cpu: 8                   # 8 vCPUs (cores)
+  memory_gb: 8             # 8 GB RAM
+  disk_size_gb: 200        # 200 GB persistent boot disk
+
+# Automatic scaling (adjust to your needs)
+automatic_scaling:
+  min_num_instances: 1     # At least 1 instance always running
+  max_num_instances: 10    # Scale up to 10 instances
+  cool_down_period_sec: 180  # Time to wait before scaling down
+  cpu_utilization:
+    target_utilization: 0.65  # Scale when CPU hits 65%
+
+# Minimal environment variables (no DB-related ones, as per your request)
+env_variables:
+  DJANGO_SETTINGS_MODULE: "pathpilot.settings"
+  PYTHONUNBUFFERED: "1"
+
+# Network settings (optional for private VPC access to Cloud SQL)
+network:
+  name: default            # Use your VPC if Cloud SQL is on a private IP
+
+# Health checks (ensures Gunicorn is responsive)
+liveness_check:
+  path: "/health"          # Add a /health endpoint in your Django urls.py
+  check_interval_sec: 30
+  timeout_sec: 4
+  failure_threshold: 2
+  success_threshold: 2
+
+readiness_check:
+  path: "/health"
+  check_interval_sec: 5
+  timeout_sec: 4
+  failure_threshold: 2
+  success_threshold: 2
+  app_start_timeout_sec: 300  # Allow time for Django/Gunicorn startup

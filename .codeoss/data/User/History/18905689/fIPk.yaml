@@ -1,0 +1,39 @@
+runtime: python
+env: flex                  # Specifies Flexible Environment
+runtime_config:
+  operating_system: "ubuntu22"  # Required for Python 3.8+
+  runtime_version: "3.12"    # Pins to Python 3.12
+
+entrypoint: gunicorn --bind :$PORT --timeout 120 --workers 3 --preload pathpilot.wsgi:application
+
+# Resource configuration
+resources:
+  cpu: 8                   # 8 vCPUs
+  memory_gb: 8             # 8 GB RAM
+  disk_size_gb: 200        # 200 GB persistent boot disk
+
+# Automatic scaling
+automatic_scaling:
+  min_num_instances: 1
+  max_num_instances: 10
+  cool_down_period_sec: 180
+  cpu_utilization:
+    target_utilization: 0.65
+
+# Minimal environment variables
+env_variables:
+  DJANGO_SETTINGS_MODULE: "pathpilot.settings"
+  PYTHONUNBUFFERED: "1"
+
+# Network settings
+network:
+  name: appie
+
+# Liveness check only (basic VM/container monitoring; no custom path needed)
+liveness_check:
+  check_interval_sec: 30
+  timeout_sec: 4
+  failure_threshold: 2
+  success_threshold: 2
+
+# Readiness check omitted (defaults apply)
