@@ -1,0 +1,33 @@
+2025-08-21 09:53:22.608 [warning] Dir "/home/shaiksahil0911/pathpilot/.pixi/envs" is not watchable (directory does not exist)
+2025-08-21 09:53:22.608 [info] Starting Environment refresh
+2025-08-21 09:53:22.608 [info] Searching for interpreters in posix paths locator
+2025-08-21 09:53:22.608 [info] Searching for pyenv environments
+2025-08-21 09:53:22.608 [info] Searching for conda environments
+2025-08-21 09:53:22.608 [info] Searching for global virtual environments
+2025-08-21 09:53:22.608 [info] Searching for custom virtual environments
+2025-08-21 09:53:22.608 [info] pyenv is not installed
+2025-08-21 09:53:22.608 [info] Finished searching for pyenv environments: 1581 milliseconds
+2025-08-21 09:53:22.608 [info] Finished searching for custom virtual envs: 1580 milliseconds
+2025-08-21 09:53:22.608 [info] Finished searching for global virtual envs: 1595 milliseconds
+2025-08-21 09:53:22.609 [info] Found: /bin/python --> /bin/python3.12
+2025-08-21 09:53:22.610 [info] Found: /bin/python3 --> /bin/python3.12
+2025-08-21 09:53:22.611 [info] Found: /bin/python3.12 --> /bin/python3.12
+2025-08-21 09:53:22.621 [info] Found: /usr/bin/python --> /usr/bin/python3.12
+2025-08-21 09:53:22.621 [info] Found: /usr/bin/python3 --> /usr/bin/python3.12
+2025-08-21 09:53:22.621 [info] Found: /usr/bin/python3.12 --> /usr/bin/python3.12
+2025-08-21 09:53:22.652 [info] Finished searching for interpreters in posix paths locator: 1654 milliseconds
+2025-08-21 09:53:25.404 [info] > hatch env show --json
+2025-08-21 09:53:25.404 [info] cwd: .
+2025-08-21 09:53:25.415 [info] > /bin/python -I /google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/get_output_via_markers.py /google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/interpreterInfo.py
+2025-08-21 09:53:25.425 [info] > pyenv which python
+2025-08-21 09:53:25.425 [info] cwd: .
+2025-08-21 09:53:25.438 [info] > /usr/bin/python -I /google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/get_output_via_markers.py /google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/interpreterInfo.py
+2025-08-21 09:53:25.459 [info] > conda info --json
+2025-08-21 09:53:25.800 [info] Environments refresh paths discovered (event): 4803 milliseconds
+2025-08-21 09:53:25.800 [info] Environments refresh finished (event): 4803 milliseconds
+2025-08-21 09:53:25.800 [info] Environments refresh paths discovered: 4803 milliseconds
+2025-08-21 09:53:25.826 [info] Environment refresh took 4829 milliseconds
+2025-08-21 09:53:25.901 [info] Python interpreter path: /bin/python
+2025-08-21 09:53:28.544 [info] Discover tests for workspace name: undefined - uri: /User/settings.json
+2025-08-21 09:53:30.817 [info] Starting Jedi language server for pathpilot.
+2025-08-21 09:55:23.489 [info] Discover tests for workspace name: undefined - uri: /User/settings.json

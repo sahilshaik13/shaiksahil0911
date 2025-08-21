@@ -57,3 +57,7 @@
     at processImmediate (node:internal/timers:483:21)
 2025-08-21 08:06:01.110 [warning] [Decorations] CAPPING events from decorations provider vscode.git 10000
 2025-08-21 08:06:03.654 [warning] [Decorations] CAPPING events from decorations provider vscode.git 10000
+2025-08-21 08:06:51.528 [warning] [Decorations] CAPPING events from decorations provider vscode.git 10000
+2025-08-21 08:19:32.236 [info] Extension host terminating: received terminate message from renderer
+2025-08-21 08:19:32.263 [info] Lock '/home/shaiksahil0911/.codeoss/data/User/workspaceStorage/-1e1ed0aa/vscode.lock': Marking the lockfile as scheduled to be released in 6000 ms.
+2025-08-21 08:19:32.435 [info] Extension host with pid 5581 exiting with code 0

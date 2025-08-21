@@ -493,3 +493,5 @@ python manage.py migrate
 python manage.py runserver 8081
 pip install python-dotenv
 pip install google-generativeai
+git config --global user.name "Your Name"
+git config --global user.email "your.email@example.com"
