@@ -1,4 +1,0 @@
-Starting background process...[INFO] 2025-08-20 18:19:16.573 PM -- Using InMemoryTaskStore
-[INFO] 2025-08-20 18:19:16.586 PM -- [CoreAgent] Agent Server started on http://localhost:42563
-[INFO] 2025-08-20 18:19:16.587 PM -- [CoreAgent] Agent Card: http://localhost:42563/.well-known/agent.json
-[INFO] 2025-08-20 18:19:16.587 PM -- [CoreAgent] Press Ctrl+C to stop the server
